@@ -1,0 +1,10 @@
+title: Newborn IQ
+description: Evidence-based newborn care and parenting
+theme: minima
+baseurl: ""
+url: "https://newborniq.io"
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+show_excerpts: true
+minima:
+  skin: dark
