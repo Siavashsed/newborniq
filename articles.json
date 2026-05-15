@@ -11,5 +11,18 @@
       "aap.org",
       "sleepfoundation.org"
     ]
+  },
+  {
+    "title": "How to Swaddle Correctly, and When You Need to Stop",
+    "slug": "how-to-swaddle-correctly-stop",
+    "meta_description": "NICU nurse and mom of three explains correct swaddling technique, common mistakes, and the exact signs it's time to stop.",
+    "date": "May 15, 2026",
+    "date_iso": "2026-05-15",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/28529094/pexels-photo-28529094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "hipdysplasia.org",
+      "healthychildren.org"
+    ]
   }
 ]
