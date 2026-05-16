@@ -1,0 +1,52 @@
+[
+  {
+    "id": "c1645",
+    "name": "Sarah M.",
+    "initials": "SM",
+    "color": "#f59e0b",
+    "date_iso": "2026-05-16",
+    "date_display": "May 16, 2026",
+    "text": "This was so helpful! My daughter hated being swaddled at first, but once I figured out the right technique from your article, she slept so much better. We stopped around 3 months when she started rolling.",
+    "likes": 8
+  },
+  {
+    "id": "c2653",
+    "name": "James T.",
+    "initials": "JT",
+    "color": "#10b981",
+    "date_iso": "2026-05-18",
+    "date_display": "May 18, 2026",
+    "text": "Question: does swaddling affect their ability to self-soothe later? I've read conflicting things online and want to make sure I'm not creating dependency.",
+    "likes": 5
+  },
+  {
+    "id": "c3173",
+    "name": "Michelle D.",
+    "initials": "MD",
+    "color": "#14b8a6",
+    "date_iso": "2026-05-21",
+    "date_display": "May 21, 2026",
+    "text": "Honestly, my son was a swaddle escape artist from day one. Not every baby cooperates, so don't stress if it doesn't work for yours. There are other ways to help them feel secure.",
+    "likes": 12
+  },
+  {
+    "id": "c4974",
+    "name": "David L.",
+    "initials": "DL",
+    "color": "#38bdf8",
+    "date_iso": "2026-05-25",
+    "date_display": "May 25, 2026",
+    "text": "The part about stopping at the right time is crucial. We waited too long and it was harder to break the habit. Good reminder to watch for those rolling signs.",
+    "likes": 7
+  },
+  {
+    "id": "c5167",
+    "name": "Patricia N.",
+    "initials": "PN",
+    "color": "#ef4444",
+    "date_iso": "2026-05-29",
+    "date_display": "May 29, 2026",
+    "text": "My pediatrician recommended swaddling for hip development too, not just sleep. Wish you'd mentioned that connection in the article.",
+    "likes": 3
+  }
+]
