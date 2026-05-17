@@ -2,220 +2,57 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About Melissa Torres - Newborn IQ</title>
+<title>About — Newborn IQ</title>
 <meta name="description" content="Evidence-based newborn care guidance from a NICU nursing background.">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-/* === reset === */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{  --bg:#f0f9ff;--bg2:#e6f4ff;--sur:#dbeafe;
-  --pri:#0369a1;--pri2:#0284c7;
-  --txt:#0c1a2e;--mut:#5b8aad;--brd:#bfdbfe;
-  --fh:system-ui,sans-serif;--fb:system-ui,sans-serif;--fm:monospace;}
-body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.7}
-a{color:var(--pri);text-decoration:none}a:hover{color:var(--pri2)}
-/* === nav === */
-#g-top{background:#fff;border-bottom:2px solid var(--pri);padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:99;box-shadow:0 1px 8px rgba(0,0,0,.06)}
-#g-brand{font-size:20px;font-weight:800;color:var(--pri)}
-#g-nav{display:flex;gap:28px}#g-nav a{font-size:13px;color:var(--mut);font-weight:500;transition:color .2s}#g-nav a:hover{color:var(--pri)}
-/* === author band === */
-.ga-band{background:var(--bg2);border-bottom:1px solid var(--brd);padding:48px 48px 40px;display:flex;align-items:center;gap:32px}
-.ga-avi{width:80px;height:80px;border-radius:50%;background:var(--pri);display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 12px rgba(0,0,0,.15)}
-.ga-band h1{font-size:clamp(20px,3vw,34px);font-weight:800;margin-bottom:4px;color:var(--txt)}
-.ga-band-role{font-size:14px;color:var(--pri);font-weight:600}
-.ga-band-cat{font-size:12px;color:var(--mut);margin-top:4px}
-/* === body layout: two-column on desktop === */
-.ga-layout{display:grid;grid-template-columns:1fr 280px;gap:48px;max-width:1060px;margin:0 auto;padding:52px 48px}
-.ga-main h2{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--mut);border-bottom:1px solid var(--brd);padding-bottom:10px;margin:0 0 18px}
-.ga-section{margin-bottom:36px}
-.ga-p{color:var(--mut);line-height:1.9;margin-bottom:14px}
-/* === sidebar === */
-.ga-side{padding-top:4px}
-.ga-card{background:#fff;border:1px solid var(--brd);border-radius:10px;padding:22px;box-shadow:0 2px 8px rgba(0,0,0,.04);margin-bottom:20px}
-.ga-card-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--pri);margin-bottom:10px}
-.ga-card p{font-size:13px;color:var(--mut);line-height:1.8;margin-bottom:10px}
-.ga-card p:last-child{margin-bottom:0}
-/* === newsletter === */
-.ga-nl{background:#fff;border:1px solid var(--brd);border-radius:10px;padding:24px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.ga-nl h3{font-size:16px;font-weight:700;color:var(--txt);margin-bottom:8px}.ga-nl p{color:var(--mut);font-size:13px;margin-bottom:16px}
-#g-nl-form2{display:flex;flex-direction:column;gap:8px}
-#g-nl-input2{border:1px solid var(--brd);border-radius:6px;padding:10px 12px;font-size:13px;outline:none;transition:border-color .2s;width:100%}
-#g-nl-input2:focus{border-color:var(--pri)}
-#g-nl-btn2{background:var(--pri);color:#fff;border:none;border-radius:6px;padding:10px;font-size:13px;font-weight:700;cursor:pointer;transition:background .2s}
-#g-nl-btn2:hover{background:var(--pri2)}.nl-ok{color:var(--pri);font-weight:600;padding:6px 0;font-size:13px}
-/* === footer === */
-#g-foot{background:var(--bg2);border-top:1px solid var(--brd);padding:24px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-#g-foot-copy{font-size:12px;color:var(--mut)}#g-foot-links{display:flex;gap:20px}#g-foot-links a{font-size:12px;color:var(--mut)}
-@media(max-width:780px){#g-top{padding:0 16px}.ga-band{padding:32px 16px;flex-direction:column;gap:16px}.ga-layout{grid-template-columns:1fr;padding:32px 16px;gap:24px}.ga-side{display:none}#g-foot{padding:20px 16px;flex-direction:column;text-align:center}}
+body{font-family:'Inter',system-ui,sans-serif;background:#f0f9ff;color:#0c1a2e;font-size:15px;line-height:1.75}
+a{color:#0369a1;text-decoration:none}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-bottom:1px solid #bfdbfe}
+.nav-logo{font-family:'Lora',Georgia,serif;font-size:22px;font-weight:700;color:#0c1a2e}
+.nav-links{display:flex;gap:20px}.nav-links a{font-size:13px;color:#5b8aad;font-weight:500}
+.banner{background:#e6f4ff;border-bottom:1px solid #bfdbfe;padding:52px 48px;text-align:center}
+.banner h1{font-family:'Lora',Georgia,serif;font-size:clamp(26px,5vw,48px);font-weight:700;color:#0c1a2e;margin-bottom:8px}
+.banner p{color:#5b8aad;font-size:16px}
+.pxl{height:200px;overflow:hidden}.pxl img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s;display:block}
+.wrap{max-width:700px;margin:0 auto;padding:52px 24px}
+.avi{width:80px;height:80px;border-radius:50%;background:#0369a1;color:#fff;font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+.abt-p{color:#5b8aad;line-height:1.9;margin-bottom:16px}
+h2{font-family:'Lora',Georgia,serif;font-size:22px;font-weight:700;margin:36px 0 12px;color:#0c1a2e}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:20px 48px;border-top:1px solid #bfdbfe;font-size:12px;color:#5b8aad}
+.foot-links{display:flex;gap:16px}.foot-links a{color:#5b8aad}
+@media(max-width:600px){.nav,.foot{padding:16px 20px;flex-direction:column;text-align:center}.banner{padding:36px 20px}.wrap{padding:36px 16px}}
 </style>
 </head>
 <body>
-
-<!-- nav -->
-<header id="g-top">
-  <div id="g-brand">Newborn IQ</div>
-  <nav id="g-nav"><a href="./">Home</a><a href="about.html">About</a></nav>
-</header>
-
-<!-- author-band -->
-<div class="ga-band">
-  <div class="ga-avi">MT</div>
-  <div>
-    <h1>Melissa Torres</h1>
-    <div class="ga-band-role">NICU Nurse & Mother of Three</div>
-    <div class="ga-band-cat">Newborn & Baby Care</div>
-  </div>
+<nav class="nav">
+  <div class="nav-logo">Newborn IQ</div>
+  <div class="nav-links"><a href="./">Home</a><a href="about.html">About</a></div>
+</nav>
+<div class="banner">
+  <h1>About Newborn IQ</h1>
+  <p>Evidence-Based Newborn & Baby Care</p>
 </div>
-
-<!-- pexels-banner -->
-<!-- hero-banner -->
-<div id="pxl-wrap" style="width:100%;height:220px;overflow:hidden;position:relative;background:var(--bg2);border-bottom:1px solid var(--brd);">
-  <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s;display:block;" alt="">
-  <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
+<div class="pxl"><img id="pxl-img" alt=""></div>
+<div class="wrap">
+  <div class="avi">MT</div>
+  <h2 style="text-align:center">Melissa Torres</h2>
+  <p style="text-align:center;color:#0369a1;font-weight:600;margin-bottom:28px">NICU Nurse & Mother of Three</p>
+  <p class="abt-p">I went into nursing knowing I wanted to work with newborns. The NICU track requires additional training beyond the RN, and I pursued it immediately after graduating. The NICU is unlike any other unit - the pace, the stakes, and the weight of caring for families in their most vulnerable moments shape you permanently.</p>
+    <p class="abt-p">Twelve years in the NICU means I have watched thousands of parents navigate the most overwhelming weeks of their lives. In those twelve years I have also watched the quality of information available to parents outside the hospital become increasingly unreliable as social media filled the space once held by consistent public health messaging.</p>
+    <p class="abt-p">The patterns in what new parents believe about infant care worry me. Sleep advice that contradicts current safe sleep guidelines. Feeding advice that creates anxiety around normal hunger cues. Developmental expectations based on what parents want to be true rather than what the research shows.</p>
+    <p class="abt-p">Pediatric evidence has moved significantly in the past decade on pacifier use, safe sleep environments, responsive feeding, and early allergen introduction. Parents reading content from five years ago are reading outdated guidance.</p>
+    <p class="abt-p">Newborn IQ is built around what current pediatric evidence actually supports. I write from twelve years of clinical experience and ongoing review of published research. The goal is content a NICU nurse would actually recommend - practical, calm, accurate, and free of the anxiety-amplification that defines too much of what new parents read.</p>
+  <h2>Our Mission</h2>
+  <p class="abt-p">Newborn care advice grounded in current pediatric research - calm, practical, and free of the fear-mongering.</p>
+  <p style="margin-top:32px"><a href="./">← Back to Newborn IQ</a></p>
 </div>
-
-<!-- main-content: two-column layout -->
-<div class="ga-layout">
-
-  <!-- left: main story -->
-  <div class="ga-main">
-
-    <!-- section: background -->
-    <div class="ga-section">
-      <h2>Background</h2>
-      <p class="ga-p">I went into nursing knowing I wanted to work with newborns. The NICU track requires additional training beyond the RN, and I pursued it immediately after graduating. The NICU is unlike any other unit - the pace, the stakes, and the weight of caring for families in their most vulnerable moments shape you permanently.</p>
-    <p class="ga-p">Twelve years in the NICU means I have watched thousands of parents navigate the most overwhelming weeks of their lives. In those twelve years I have also watched the quality of information available to parents outside the hospital become increasingly unreliable as social media filled the space once held by consistent public health messaging.</p>
-    <p class="ga-p">The patterns in what new parents believe about infant care worry me. Sleep advice that contradicts current safe sleep guidelines. Feeding advice that creates anxiety around normal hunger cues. Developmental expectations based on what parents want to be true rather than what the research shows.</p>
-    <p class="ga-p">Pediatric evidence has moved significantly in the past decade on pacifier use, safe sleep environments, responsive feeding, and early allergen introduction. Parents reading content from five years ago are reading outdated guidance.</p>
-    <p class="ga-p">Newborn IQ is built around what current pediatric evidence actually supports. I write from twelve years of clinical experience and ongoing review of published research. The goal is content a NICU nurse would actually recommend - practical, calm, accurate, and free of the anxiety-amplification that defines too much of what new parents read.</p>
-    </div>
-
-    <!-- section: about this site -->
-    <div class="ga-section">
-      <h2>About Newborn IQ</h2>
-      <p class="ga-p">Newborn care advice grounded in current pediatric research - calm, practical, and free of the fear-mongering.</p>
-      <p class="ga-p">Evidence-based newborn care guidance from a NICU nursing background.</p>
-    </div>
-
-  </div>
-
-  <!-- right: sidebar -->
-  <aside class="ga-side">
-
-    <!-- credentials card -->
-    <div class="ga-card">
-      <div class="ga-card-label">Credentials</div>
-      <p>NICU Nurse & Mother of Three</p>
-      <p>Writing in the Newborn & Baby Care space since publication launched.</p>
-    </div>
-
-    <!-- newsletter card -->
-    <div class="ga-nl">
-      <h3>The Parent Brief</h3>
-      <p>Monthly newborn and baby care updates from a NICU nurse perspective.</p>
-      <form id="g-nl-form2" onsubmit="nlSub(event)">
-        <input type="email" id="g-nl-input2" placeholder="your@email.com" required>
-        <button type="submit" id="g-nl-btn2">Subscribe</button>
-      </form>
-    </div>
-
-  </aside>
-</div>
-
-<!-- section: contributors -->
-<section style="max-width:1060px;margin:0 auto;padding:40px 48px 0">
-  <h2 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--mut);margin-bottom:16px">Contributors</h2>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:48px">
-    <div style="background:var(--bg2);border:1px solid #e5e7eb;border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
-      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">DO</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:#111827">Daniel Osei</div>
-        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Field Correspondent</div>
-        <div style="font-size:12px;color:#6b7280;line-height:1.6">On the ground covering conferences, product launches, and industry events. Focuses on what the press releases leave out.</div>
-      </div>
-    </div>
-    <div style="background:var(--bg2);border:1px solid #e5e7eb;border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
-      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">JT</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:#111827">James Thorne</div>
-        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Technical Contributor</div>
-        <div style="font-size:12px;color:#6b7280;line-height:1.6">Full-stack developer who switched to financial writing. Covers the engineering reality behind products and platforms.</div>
-      </div>
-    </div>
-    <div style="background:var(--bg2);border:1px solid #e5e7eb;border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
-      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">SR</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:#111827">Sofia Reyes</div>
-        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Editorial Contributor</div>
-        <div style="font-size:12px;color:#6b7280;line-height:1.6">Spent eight years as a financial journalist before going independent. Strong background in regulatory and policy reporting.</div>
-      </div>
-    </div>
-    <div style="background:var(--bg2);border:1px solid #e5e7eb;border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
-      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">CS</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:#111827">Claire Sutton</div>
-        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Industry Contributor</div>
-        <div style="font-size:12px;color:#6b7280;line-height:1.6">Worked in PR for major financial brands before switching sides. Understands how the narrative gets constructed, and how to cut through it.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- section: comments -->
-<section style="max-width:1060px;margin:0 auto;padding:0 48px 48px">
-  <h2 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--mut);margin-bottom:16px">Reader Comments</h2>
-  <div style="background:var(--bg2);border:1px solid #e5e7eb;border-radius:10px;padding:4px 20px">
-    <div style="padding:14px 0;border-bottom:1px solid #e5e7eb">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">S</div>
-        <span style="font-size:13px;font-weight:600;color:#374151">Serena T.</span>
-        <span style="font-size:10px;color:#6b7280;margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:#374151;line-height:1.65;padding-left:36px">I have shared this with three colleagues already. The kind of analysis that used to be locked behind expensive research subscriptions.</div>
-    </div>
-    <div style="padding:14px 0;border-bottom:1px solid #e5e7eb">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">M</div>
-        <span style="font-size:13px;font-weight:600;color:#374151">Mike H.</span>
-        <span style="font-size:10px;color:#6b7280;margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:#374151;line-height:1.65;padding-left:36px">The level of detail here is what keeps me coming back. You actually back up the claims instead of just asserting them.</div>
-    </div>
-    <div style="padding:14px 0;border-bottom:1px solid #e5e7eb">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">R</div>
-        <span style="font-size:13px;font-weight:600;color:#374151">Raj P.</span>
-        <span style="font-size:10px;color:#6b7280;margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:#374151;line-height:1.65;padding-left:36px">The data-first approach here is exactly what I was looking for. Most analysis I find online is opinion dressed up as research.</div>
-    </div>
-    <div style="padding:14px 0;border-bottom:1px solid #e5e7eb">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">D</div>
-        <span style="font-size:13px;font-weight:600;color:#374151">Denise L.</span>
-        <span style="font-size:10px;color:#6b7280;margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:#374151;line-height:1.65;padding-left:36px">I have been following this site for over a year. The consistency and quality have only gone up. Very few places I can say that about.</div>
-    </div>
-    <div style="padding:14px 0;border-bottom:none">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">B</div>
-        <span style="font-size:13px;font-weight:600;color:#374151">Brett W.</span>
-        <span style="font-size:10px;color:#6b7280;margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:#374151;line-height:1.65;padding-left:36px">I appreciate that corrections get made openly and visibly. That kind of intellectual honesty is rare and worth rewarding with attention.</div>
-    </div>
-  </div>
-</section>
-
-<!-- footer -->
-<footer id="g-foot">
-  <span id="g-foot-copy">© Newborn IQ</span>
-  <div id="g-foot-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
+<footer class="foot">
+  <span>© Newborn IQ · Evidence-based newborn care guidance from a NICU nursing background.</span>
+  <div class="foot-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
 </footer>
-
-<script>
-function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="nl-ok">✓ Subscribed!</div>';}
-/* banner loader: pexels → picsum fallback */
+<script>/* banner loader: pexels → picsum fallback */
 (function(){
   var el=document.getElementById('pxl-img');
   var cr=document.getElementById('pxl-cred');
@@ -229,11 +66,10 @@ function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="nl-ok">✓ 
     fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('newborn baby infant care peaceful sleeping')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
       .then(function(r){return r.json();}).then(function(d){
         if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else{showImg('https://picsum.photos/seed/717/1400/400','');}
-      }).catch(function(){showImg('https://picsum.photos/seed/717/1400/400','');});
+        else{showImg('https://picsum.photos/seed/748/1400/400','');}
+      }).catch(function(){showImg('https://picsum.photos/seed/748/1400/400','');});
   }else{
-    showImg('https://picsum.photos/seed/717/1400/400','');
+    showImg('https://picsum.photos/seed/748/1400/400','');
   }
-})();
-</script>
+})();</script>
 </body></html>
