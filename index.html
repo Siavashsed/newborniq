@@ -33,7 +33,7 @@ img{max-width:100%;display:block}
 .nav-in{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:64px;gap:40px}
 .nav-logo{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--navy)}
 .nav-logo span{color:var(--sage)}
-.nav-links{display:flex;gap:0;flex:1}
+.nav-links{display:flex;gap:0;flex:1;flex-wrap:nowrap;overflow:hidden}
 .nav-links a{font-size:14px;font-weight:600;padding:0 16px;height:64px;display:flex;align-items:center;color:var(--muted);transition:color .15s}
 .nav-links a:hover{color:var(--navy)}
 .nav-cta{margin-left:auto;background:var(--navy);color:#fff;font-size:14px;font-weight:700;padding:10px 20px;border-radius:24px;transition:background .15s}
@@ -331,6 +331,15 @@ const PLACEHOLDER_ARTS=[
   {title:"Starting Solids at 6 Months: A Simple, Flexible Guide",slug:"starting-solids-6-months",cat:"feeding",excerpt:"Baby-led weaning vs. purees, allergen introduction, first foods - without the overwhelming contradictions.",mins:8},
 ];
 
+const IMGS=[
+  'https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=75',
+  'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&q=75',
+  'https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=600&q=75',
+  'https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&q=75',
+  'https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=600&q=75',
+  'https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?w=600&q=75',
+];
+
 let arts=[];
 let activeFilter="all";
 
@@ -343,9 +352,9 @@ function setFilter(f){
 function renderCards(){
   const g=document.getElementById("cardGrid");
   const filtered=activeFilter==="all"?arts:arts.filter(a=>a.cat===activeFilter);
-  g.innerHTML=filtered.slice(0,6).map(a=>`
+  g.innerHTML=filtered.slice(0,6).map((a,i)=>`
     <a href="./${a.slug}/" class="card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=70" alt="${a.title}" loading="lazy"></div>
+      <div class="card-img"><img src="${IMGS[i%IMGS.length]}" alt="${a.title}" loading="lazy"></div>
       <div class="card-body">
         <span class="card-tag">${a.cat}</span>
         <h3 class="card-title">${a.title}</h3>
@@ -356,9 +365,9 @@ function renderCards(){
 }
 
 function renderMore(){
-  document.getElementById("moreGrid").innerHTML=(arts[6]?arts.slice(6,9):arts.slice(0,3)).map(a=>`
+  document.getElementById("moreGrid").innerHTML=(arts[6]?arts.slice(6,9):arts.slice(0,3)).map((a,i)=>`
     <a href="./${a.slug}/" class="card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=70" alt="${a.title}" loading="lazy"></div>
+      <div class="card-img"><img src="${IMGS[(i+3)%IMGS.length]}" alt="${a.title}" loading="lazy"></div>
       <div class="card-body">
         <span class="card-tag">${a.cat}</span>
         <h3 class="card-title">${a.title}</h3>
@@ -372,6 +381,10 @@ async function load(){
   try{const r=await fetch("./articles.json");if(r.ok){arts=await r.json();}else{arts=PLACEHOLDER_ARTS;}}catch{arts=PLACEHOLDER_ARTS;}
   renderCards();
   renderMore();
+  if(arts[0]){
+    const pill=document.querySelector(".hero-pill");
+    if(pill)pill.innerHTML=`<span class="hero-pill-dot"></span>Trusted by 80,000+ new parents`;
+  }
 }
 load();
 </script>
