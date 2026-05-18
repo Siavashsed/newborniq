@@ -1,62 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>siavashsed.github.io/newborniq — Newborn Care & Parenting</title>
-<meta name="description" content="Expert insights on newborn care & parenting">
-
-
-
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Newborn IQ — Evidence-Based Newborn & Baby Care</title>
+<meta name="description" content="Newborn care advice grounded in current pediatric research - calm, practical, and free of the fear-mongering.">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Georgia',serif;background:#ffffff;color:#111111;line-height:1.65;font-size:16px}
-a{color:#2563eb;text-decoration:none}
-a:hover{color:#1d4ed8}
-img{max-width:100%;display:block;height:auto}
-
-.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
-.hdr{background:#ffffff;border-bottom:1px solid #e2e5ea;padding:20px 0;text-align:center}
-.logo{font-size:28px;font-weight:800;color:#2563eb;display:block;margin-bottom:4px}
-.tagline{font-size:12px;color:#999;text-transform:uppercase;letter-spacing:2px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:24px;margin-top:40px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:#f0f9ff;color:#0c1a2e;font-size:15px;line-height:1.7}
+a{color:inherit;text-decoration:none}
+/* nav */
+.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-bottom:1px solid #bfdbfe;background:#f0f9ff}
+.nav-logo{font-family:'Lora',Georgia,serif;font-size:24px;font-weight:700;color:#0c1a2e;letter-spacing:-0.3px}
+.nav-logo span{color:#0369a1}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:#5b8aad;font-weight:500;transition:color .2s}.nav-links a:hover{color:#0369a1}
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:500px;background:#e6f4ff;border-bottom:1px solid #bfdbfe}
+.hero-img{overflow:hidden;position:relative}
+.hero-img img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .8s;position:absolute;inset:0}
+.hero-img-ph{width:100%;height:100%;background:linear-gradient(135deg,#e6f4ff,#bfdbfe)}
+.hero-content{padding:56px 48px;display:flex;flex-direction:column;justify-content:center}
+.hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#0369a1;margin-bottom:16px}
+.hero-title{font-family:'Lora',Georgia,serif;font-size:clamp(24px,3vw,40px);font-weight:700;line-height:1.2;color:#0c1a2e;margin-bottom:16px}
+.hero-desc{font-size:15px;color:#5b8aad;line-height:1.8;margin-bottom:24px}
+.hero-cta{display:inline-block;background:#0369a1;color:#fff;border-radius:100px;padding:12px 28px;font-size:14px;font-weight:600;align-self:flex-start;transition:background .2s}
+.hero-cta:hover{background:#0284c7}
+/* article section */
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.s-label{font-family:'Lora',Georgia,serif;font-size:22px;font-weight:700;color:#0c1a2e;padding:40px 0 20px;border-bottom:2px solid #0369a1;margin-bottom:28px}
+.bloom-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:48px}
+.bloom-card{background:#e6f4ff;border-radius:16px;overflow:hidden;border:1px solid #bfdbfe;cursor:pointer;transition:box-shadow .25s,transform .25s}
+.bloom-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.1);transform:translateY(-4px)}
+.bloom-card img{width:100%;height:200px;object-fit:cover;display:block}
+.bloom-card-ph{width:100%;height:200px;background:linear-gradient(135deg,#f0f9ff,#bfdbfe);display:block}
+.bloom-card-body{padding:20px}
+.bloom-cat{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#0369a1;margin-bottom:8px}
+.bloom-title{font-family:'Lora',Georgia,serif;font-size:17px;font-weight:700;line-height:1.3;color:#0c1a2e;margin-bottom:8px}
+.bloom-desc{font-size:13px;color:#5b8aad;line-height:1.65}
+.bloom-date{font-size:11px;color:#5b8aad;margin-top:10px}
+/* pull feature */
+.pull-feat{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#e6f4ff;border:1px solid #bfdbfe;border-radius:16px;overflow:hidden;margin-bottom:48px}
+.pull-feat img{width:100%;height:100%;object-fit:cover;min-height:300px}
+.pull-feat-body{padding:40px;display:flex;flex-direction:column;justify-content:center}
+.pull-feat-eyebrow{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#0369a1;margin-bottom:12px}
+.pull-feat-title{font-family:'Lora',Georgia,serif;font-size:26px;font-weight:700;line-height:1.25;color:#0c1a2e;margin-bottom:14px}
+.pull-feat-desc{font-size:14px;color:#5b8aad;line-height:1.8;margin-bottom:20px}
+.pull-feat-link{color:#0369a1;font-weight:600;font-size:14px}
+/* newsletter */
+.nl-wrap{background:#e6f4ff;border-radius:20px;border:1px solid #bfdbfe;padding:52px;text-align:center;margin-bottom:48px}
+.nl-wrap h2{font-family:'Lora',Georgia,serif;font-size:clamp(22px,3vw,32px);font-weight:700;margin-bottom:10px}
+.nl-wrap p{color:#5b8aad;font-size:15px;margin-bottom:24px}
+.nl-row{display:flex;gap:10px;justify-content:center;max-width:440px;margin:0 auto}
+.nl-input{flex:1;border:1px solid #bfdbfe;background:#f0f9ff;color:#0c1a2e;border-radius:100px;padding:13px 20px;font-size:14px;outline:none}
+.nl-input:focus{border-color:#0369a1}
+.nl-btn{background:#0369a1;color:#fff;border:none;border-radius:100px;padding:13px 24px;font-size:14px;font-weight:600;cursor:pointer}
+.nl-btn:hover{background:#0284c7}
+/* footer */
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:24px 48px;border-top:1px solid #bfdbfe;font-size:12px;color:#5b8aad}
+.foot-links{display:flex;gap:20px}.foot-links a{color:#5b8aad}.foot-links a:hover{color:#0369a1}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-img{height:320px;position:relative}.hero-img img{position:absolute}.bloom-grid{grid-template-columns:1fr 1fr}.pull-feat{grid-template-columns:1fr}.nav{padding:16px 20px}}
+@media(max-width:600px){.bloom-grid{grid-template-columns:1fr}.hero-content{padding:32px 20px}.wrap{padding:0 16px}.nl-wrap{padding:36px 16px}.nl-row{flex-direction:column}.foot{flex-direction:column;text-align:center;padding:20px 16px}}
 </style>
 </head>
 <body>
-<div class="hdr">
-  <a href="/" class="logo">siavashsed.github.io/newborniq</a>
-  <span class="tagline">Newborn Care & Parenting</span>
+
+<nav class="nav">
+  <div class="nav-logo">Newborn<span>IQ</span></div>
+  <div class="nav-links">
+    <a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-img">
+    <img id="pxl-img" alt="Newborn IQ">
+    <div class="hero-img-ph"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Newborn & Baby Care</div>
+    <h1 class="hero-title" id="hero-title">Evidence-Based Newborn & Baby Care</h1>
+    <p class="hero-desc" id="hero-desc">Newborn care advice grounded in current pediatric research - calm, practical, and free of the fear-mongering.</p>
+    <a class="hero-cta" href="#" id="hero-cta">Read more →</a>
+  </div>
 </div>
+
 <div class="wrap">
-  <div style="margin:40px 0"><div style="background:url(https://images.pexels.com/photos/9300611/pexels-photo-9300611.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center/cover;height:420px;border-radius:12px;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 60%)"></div><div style="position:absolute;bottom:0;left:0;right:0;padding:28px"><span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#2563eb">Newborn Care & Parenting</span><br><a href="/newborn-cry-frequency-guide/" style="font-size:clamp(22px,4vw,34px);font-weight:700;color:#fff;line-height:1.2;display:block;margin:8px 0">What a Newborn's Cry Actually Means: A Frequency Guide for Exhausted Parents</a><span style="font-size:13px;color:rgba(255,255,255,.7)">May 17, 2026</span></div></div></div>
-  <div class="grid"><div style="background:#f7f8fa;border:1px solid #e2e5ea;border-radius:10px;overflow:hidden">
-  <img src="https://images.pexels.com/photos/32830535/pexels-photo-32830535.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Breastfeeding Latch Issues: The Fixes That Actually Work" loading="lazy" style="width:100%;height:180px;object-fit:cover">
-  <div style="padding:18px">
-    <div style="font-size:11px;color:#999;margin-bottom:6px">May 16, 2026</div>
-    <a href="/breastfeeding-latch-fixes-that-work/" style="font-size:16px;font-weight:700;color:#111111;line-height:1.3;display:block;margin-bottom:8px">Breastfeeding Latch Issues: The Fixes That Actually Work</a>
-    <p style="font-size:13px;color:#444;line-height:1.55;margin-bottom:12px">NICU nurse and mom of three shares real fixes for breastfeeding latch issues — evidence-based, no pa...</p>
-    <a href="/breastfeeding-latch-fixes-that-work/" style="font-size:13px;font-weight:600;color:#2563eb">Read →</a>
-  </div>
-</div><div style="background:#f7f8fa;border:1px solid #e2e5ea;border-radius:10px;overflow:hidden">
-  <img src="https://images.pexels.com/photos/28529094/pexels-photo-28529094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="How to Swaddle Correctly, and When You Need to Stop" loading="lazy" style="width:100%;height:180px;object-fit:cover">
-  <div style="padding:18px">
-    <div style="font-size:11px;color:#999;margin-bottom:6px">May 15, 2026</div>
-    <a href="/how-to-swaddle-correctly-stop/" style="font-size:16px;font-weight:700;color:#111111;line-height:1.3;display:block;margin-bottom:8px">How to Swaddle Correctly, and When You Need to Stop</a>
-    <p style="font-size:13px;color:#444;line-height:1.55;margin-bottom:12px">NICU nurse and mom of three explains correct swaddling technique, common mistakes, and the exact sig...</p>
-    <a href="/how-to-swaddle-correctly-stop/" style="font-size:13px;font-weight:600;color:#2563eb">Read →</a>
-  </div>
-</div><div style="background:#f7f8fa;border:1px solid #e2e5ea;border-radius:10px;overflow:hidden">
-  <img src="https://images.pexels.com/photos/28529081/pexels-photo-28529081.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Newborn Sleep Cycles in Week One: What's Actually Normal (And What Isn't)" loading="lazy" style="width:100%;height:180px;object-fit:cover">
-  <div style="padding:18px">
-    <div style="font-size:11px;color:#999;margin-bottom:6px">May 15, 2026</div>
-    <a href="/newborn-sleep-cycles-week-one/" style="font-size:16px;font-weight:700;color:#111111;line-height:1.3;display:block;margin-bottom:8px">Newborn Sleep Cycles in Week One: What's Actually Normal (And What Isn't)</a>
-    <p style="font-size:13px;color:#444;line-height:1.55;margin-bottom:12px">NICU nurse and mom of three explains what newborn sleep really looks like in week one — no sugar-coa...</p>
-    <a href="/newborn-sleep-cycles-week-one/" style="font-size:13px;font-weight:600;color:#2563eb">Read →</a>
-  </div>
-</div></div>
+  <div class="s-label">Latest Articles</div>
+  <div class="bloom-grid" id="bloom-grid"></div>
+
+  <div id="pull-feat-wrap"></div>
+
+  <div class="s-label">More to Read</div>
+  <div class="bloom-grid" id="more-grid"></div>
 </div>
-<footer style="background:#f7f8fa;border-top:1px solid #e2e5ea;padding:40px 24px;text-align:center;font-size:13px;color:#999;margin-top:60px">
-<p>&copy; 2026 siavashsed.github.io/newborniq &nbsp;&middot;&nbsp; Newborn Care & Parenting</p>
-<p style="margin-top:6px;font-size:11px">For informational purposes only. Not financial or investment advice.</p>
-<p style="margin-top:6px;font-size:11px"><a href="/about/" style="color:#999">About</a> &nbsp;&middot;&nbsp; <a href="/contact/" style="color:#999">Contact</a> &nbsp;&middot;&nbsp; <a href="/privacy/" style="color:#999">Privacy Policy</a></p>
-</footer></body></html>
+
+<div class="wrap">
+  <div class="nl-wrap">
+    <h2>The Parent Brief</h2>
+    <p>Monthly newborn and baby care updates from a NICU nurse perspective.</p>
+    <form id="nl-f" onsubmit="nlSub(event)">
+      <div class="nl-row">
+        <input class="nl-input" type="email" placeholder="your@email.com" required>
+        <button class="nl-btn" type="submit">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<footer class="foot">
+  <span>© Newborn IQ · Evidence-based newborn care guidance from a NICU nursing background.</span>
+  <div class="foot-links">
+    <a href="./">Home</a><a href="about.html">About</a>
+    <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+  </div>
+</footer>
+
+<script>
+async function loadPosts(){
+  try{
+    var r=await fetch('./articles.json');if(!r.ok)throw 0;
+    var posts=await r.json();if(!posts||!posts.length)throw 0;
+    /* hero */
+    var h=posts[0];
+    if(h.image){var hi=document.getElementById('pxl-img');if(hi){hi.onload=function(){hi.style.opacity='1';};hi.src=h.image;}}
+    var ht=document.getElementById('hero-title'),hd=document.getElementById('hero-desc'),hc=document.getElementById('hero-cta');
+    if(ht)ht.innerHTML='<a href="./'+h.slug+'/" style="color:inherit">'+h.title+'</a>';
+    if(hd)hd.textContent=h.meta_description||'';
+    if(hc)hc.href='./'+h.slug+'/';
+    /* card fn */
+    function card(p){return '<a href="./'+p.slug+'/" style="display:block"><div class="bloom-card">'+(p.image?'<img src="'+p.image+'" alt="'+p.title+'" loading="lazy">':'<div class="bloom-card-ph"></div>')+'<div class="bloom-card-body"><div class="bloom-cat">Newborn & Baby Care</div><div class="bloom-title">'+p.title+'</div><div class="bloom-desc">'+(p.meta_description||'').slice(0,110)+'</div><div class="bloom-date">'+(p.date_iso||'')+'</div></div></div></a>';}
+    var bg=document.getElementById('bloom-grid');if(bg)bg.innerHTML=posts.slice(1,4).map(card).join('');
+    /* pull feature */
+    if(posts[4]){
+      var pf=document.getElementById('pull-feat-wrap');
+      if(pf)pf.innerHTML='<a href="./'+posts[4].slug+'/" style="display:block"><div class="pull-feat">'+(posts[4].image?'<img src="'+posts[4].image+'" alt="'+posts[4].title+'" loading="lazy">':'')+'<div class="pull-feat-body"><div class="pull-feat-eyebrow">Newborn & Baby Care</div><div class="pull-feat-title">'+posts[4].title+'</div><div class="pull-feat-desc">'+(posts[4].meta_description||'').slice(0,160)+'</div><span class="pull-feat-link">Read full article →</span></div></div></a>';
+    }
+    var mg=document.getElementById('more-grid');if(mg)mg.innerHTML=posts.slice(5,8).map(card).join('');
+  }catch(e){
+    var bg2=document.getElementById('bloom-grid');
+    if(bg2)bg2.innerHTML='<div class="bloom-card"><div class="bloom-card-ph"></div><div class="bloom-card-body"><div class="bloom-cat">Newborn & Baby Care</div><div class="bloom-title">First articles coming soon</div><div class="bloom-desc">Newborn care advice grounded in current pediatric research - calm, practical, and free of the fear-mongering.</div></div></div>';
+  }
+}
+function nlSub(e){e.preventDefault();document.getElementById('nl-f').innerHTML='<p style="color:#0369a1;font-weight:600;font-size:15px;padding:12px 0">✓ Welcome to the community!</p>';}
+loadPosts();
+/* banner loader: pexels → picsum fallback */
+(function(){
+  var el=document.getElementById('pxl-img');
+  var cr=document.getElementById('pxl-cred');
+  if(!el)return;
+  function showImg(src,cred){
+    el.onload=function(){el.style.opacity='1';if(cred&&cr){cr.textContent=cred;cr.style.opacity='1';}};
+    el.src=src;
+  }
+  var k=localStorage.getItem('pexelsKey');
+  if(k){
+    fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('newborn baby infant care peaceful sleeping')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
+      .then(function(r){return r.json();}).then(function(d){
+        if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
+        else{showImg('https://picsum.photos/seed/206/1400/400','');}
+      }).catch(function(){showImg('https://picsum.photos/seed/206/1400/400','');});
+  }else{
+    showImg('https://picsum.photos/seed/206/1400/400','');
+  }
+})();
+</script>
+</body></html>
