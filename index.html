@@ -1,183 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Newborn IQ  -  Evidence-Based Newborn & Baby Care</title>
-<meta name="description" content="Newborn care advice grounded in current pediatric research - calm, practical, and free of the fear-mongering.">
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NewbornIQ - Trusted Newborn Care Guidance</title>
+<meta name="description" content="Evidence-based newborn care, sleep guides, feeding support, and first-year milestones for new parents.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',system-ui,sans-serif;background:#f0f9ff;color:#0c1a2e;font-size:15px;line-height:1.7}
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#fafbf8;
+  --bg2:#fff;
+  --cream:#f5f0e8;
+  --navy:#1e3a5f;
+  --navy2:#162d4a;
+  --sage:#7a9e7e;
+  --warm:#f0ebe0;
+  --text:#1a2332;
+  --muted:#7a8697;
+  --border:#e4e9ef;
+  --serif:'Lora',serif;
+  --sans:'Nunito',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.7}
 a{color:inherit;text-decoration:none}
-/* nav */
-.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-bottom:1px solid #bfdbfe;background:#f0f9ff}
-.nav-logo{font-family:'Lora',Georgia,serif;font-size:24px;font-weight:700;color:#0c1a2e;letter-spacing:-0.3px}
-.nav-logo span{color:#0369a1}
-.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:#5b8aad;font-weight:500;transition:color .2s}.nav-links a:hover{color:#0369a1}
-/* hero */
-.hero{display:grid;grid-template-columns:1fr 1fr;min-height:500px;background:#e6f4ff;border-bottom:1px solid #bfdbfe}
-.hero-img{overflow:hidden;position:relative}
-.hero-img img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .8s;position:absolute;inset:0}
-.hero-img-ph{width:100%;height:100%;background:linear-gradient(135deg,#e6f4ff,#bfdbfe)}
-.hero-content{padding:56px 48px;display:flex;flex-direction:column;justify-content:center}
-.hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#0369a1;margin-bottom:16px}
-.hero-title{font-family:'Lora',Georgia,serif;font-size:clamp(24px,3vw,40px);font-weight:700;line-height:1.2;color:#0c1a2e;margin-bottom:16px}
-.hero-desc{font-size:15px;color:#5b8aad;line-height:1.8;margin-bottom:24px}
-.hero-cta{display:inline-block;background:#0369a1;color:#fff;border-radius:100px;padding:12px 28px;font-size:14px;font-weight:600;align-self:flex-start;transition:background .2s}
-.hero-cta:hover{background:#0284c7}
-/* article section */
-.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-.s-label{font-family:'Lora',Georgia,serif;font-size:22px;font-weight:700;color:#0c1a2e;padding:40px 0 20px;border-bottom:2px solid #0369a1;margin-bottom:28px}
-.bloom-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:48px}
-.bloom-card{background:#e6f4ff;border-radius:16px;overflow:hidden;border:1px solid #bfdbfe;cursor:pointer;transition:box-shadow .25s,transform .25s}
-.bloom-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.1);transform:translateY(-4px)}
-.bloom-card img{width:100%;height:200px;object-fit:cover;display:block}
-.bloom-card-ph{width:100%;height:200px;background:linear-gradient(135deg,#f0f9ff,#bfdbfe);display:block}
-.bloom-card-body{padding:20px}
-.bloom-cat{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#0369a1;margin-bottom:8px}
-.bloom-title{font-family:'Lora',Georgia,serif;font-size:17px;font-weight:700;line-height:1.3;color:#0c1a2e;margin-bottom:8px}
-.bloom-desc{font-size:13px;color:#5b8aad;line-height:1.65}
-.bloom-date{font-size:11px;color:#5b8aad;margin-top:10px}
-/* pull feature */
-.pull-feat{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#e6f4ff;border:1px solid #bfdbfe;border-radius:16px;overflow:hidden;margin-bottom:48px}
-.pull-feat img{width:100%;height:100%;object-fit:cover;min-height:300px}
-.pull-feat-body{padding:40px;display:flex;flex-direction:column;justify-content:center}
-.pull-feat-eyebrow{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#0369a1;margin-bottom:12px}
-.pull-feat-title{font-family:'Lora',Georgia,serif;font-size:26px;font-weight:700;line-height:1.25;color:#0c1a2e;margin-bottom:14px}
-.pull-feat-desc{font-size:14px;color:#5b8aad;line-height:1.8;margin-bottom:20px}
-.pull-feat-link{color:#0369a1;font-weight:600;font-size:14px}
-/* newsletter */
-.nl-wrap{background:#e6f4ff;border-radius:20px;border:1px solid #bfdbfe;padding:52px;text-align:center;margin-bottom:48px}
-.nl-wrap h2{font-family:'Lora',Georgia,serif;font-size:clamp(22px,3vw,32px);font-weight:700;margin-bottom:10px}
-.nl-wrap p{color:#5b8aad;font-size:15px;margin-bottom:24px}
-.nl-row{display:flex;gap:10px;justify-content:center;max-width:440px;margin:0 auto}
-.nl-input{flex:1;border:1px solid #bfdbfe;background:#f0f9ff;color:#0c1a2e;border-radius:100px;padding:13px 20px;font-size:14px;outline:none}
-.nl-input:focus{border-color:#0369a1}
-.nl-btn{background:#0369a1;color:#fff;border:none;border-radius:100px;padding:13px 24px;font-size:14px;font-weight:600;cursor:pointer}
-.nl-btn:hover{background:#0284c7}
-/* footer */
-.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:24px 48px;border-top:1px solid #bfdbfe;font-size:12px;color:#5b8aad}
-.foot-links{display:flex;gap:20px}.foot-links a{color:#5b8aad}.foot-links a:hover{color:#0369a1}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-img{height:320px;position:relative}.hero-img img{position:absolute}.bloom-grid{grid-template-columns:1fr 1fr}.pull-feat{grid-template-columns:1fr}.nav{padding:16px 20px}}
-@media(max-width:600px){.bloom-grid{grid-template-columns:1fr}.hero-content{padding:32px 20px}.wrap{padding:0 16px}.nl-wrap{padding:36px 16px}.nl-row{flex-direction:column}.foot{flex-direction:column;text-align:center;padding:20px 16px}}
+img{max-width:100%;display:block}
+
+/* NAV */
+.site-nav{background:var(--bg2);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-in{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:64px;gap:40px}
+.nav-logo{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--navy)}
+.nav-logo span{color:var(--sage)}
+.nav-links{display:flex;gap:0;flex:1}
+.nav-links a{font-size:14px;font-weight:600;padding:0 16px;height:64px;display:flex;align-items:center;color:var(--muted);transition:color .15s}
+.nav-links a:hover{color:var(--navy)}
+.nav-cta{margin-left:auto;background:var(--navy);color:#fff;font-size:14px;font-weight:700;padding:10px 20px;border-radius:24px;transition:background .15s}
+.nav-cta:hover{background:var(--navy2)}
+
+/* HERO - warm and welcoming */
+.hero{background:var(--cream);overflow:hidden}
+.hero-in{max-width:1160px;margin:0 auto;padding:60px 24px;display:grid;grid-template-columns:1fr 380px;gap:60px;align-items:center}
+.hero-text{}
+.hero-pill{display:inline-flex;align-items:center;gap:6px;background:var(--bg2);border:1px solid var(--border);padding:5px 14px 5px 8px;border-radius:100px;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:20px}
+.hero-pill-dot{width:8px;height:8px;background:var(--sage);border-radius:50%}
+.hero-h1{font-family:var(--serif);font-size:clamp(36px,4.5vw,56px);font-weight:600;line-height:1.15;letter-spacing:-.02em;color:var(--navy);margin-bottom:16px}
+.hero-h1 em{color:var(--sage);font-style:italic}
+.hero-desc{font-size:15px;color:var(--muted);max-width:440px;margin-bottom:32px;line-height:1.8}
+.hero-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
+.trust-item{text-align:center;padding:16px 12px;background:var(--bg2);border-radius:12px}
+.trust-num{font-family:var(--serif);font-size:24px;font-weight:600;color:var(--navy);display:block}
+.trust-label{font-size:11px;color:var(--muted);font-weight:600;line-height:1.4;margin-top:3px}
+.hero-btns{display:flex;gap:12px}
+.btn-navy{background:var(--navy);color:#fff;font-size:14px;font-weight:700;padding:12px 24px;border-radius:24px;transition:background .15s}
+.btn-navy:hover{background:var(--navy2)}
+.btn-soft{background:var(--bg2);border:2px solid var(--border);color:var(--navy);font-size:14px;font-weight:600;padding:11px 24px;border-radius:24px;transition:all .15s}
+.btn-soft:hover{border-color:var(--sage);color:var(--sage)}
+.hero-image{position:relative}
+.hero-image-main{aspect-ratio:3/4;background:var(--warm);border-radius:24px;overflow:hidden}
+.hero-image-main img{width:100%;height:100%;object-fit:cover}
+.hero-image-badge{position:absolute;bottom:-16px;left:-16px;background:var(--bg2);border-radius:16px;padding:16px 20px;box-shadow:0 8px 32px rgba(30,58,95,.12)}
+.hero-image-badge-icon{font-size:24px;margin-bottom:4px}
+.hero-image-badge-text{font-size:13px;font-weight:700;color:var(--navy)}
+.hero-image-badge-sub{font-size:11px;color:var(--muted);margin-top:2px}
+
+/* TOPIC STRIP */
+.topic-strip{background:var(--navy);padding:0}
+.topic-in{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;overflow-x:auto;scrollbar-width:none}
+.topic-in::-webkit-scrollbar{display:none}
+.topic-item{font-size:13px;font-weight:700;color:rgba(255,255,255,.5);padding:16px 20px;white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s}
+.topic-item:hover,.topic-item.active{color:#fff;border-color:var(--sage)}
+
+/* SECTIONS */
+.section{padding:52px 0}
+.container{max-width:1160px;margin:0 auto;padding:0 24px}
+.sec-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);margin-bottom:8px}
+.sec-title{font-family:var(--serif);font-size:clamp(24px,3vw,32px);font-weight:600;letter-spacing:-.02em;color:var(--navy);margin-bottom:28px}
+
+/* CARD GRID - soft and warm */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:var(--bg2);border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(30,58,95,.08)}
+.card-img{aspect-ratio:16/9;background:var(--warm);overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.card:hover .card-img img{transform:scale(1.03)}
+.card-body{padding:20px}
+.card-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sage);background:rgba(122,158,126,.1);padding:3px 8px;border-radius:4px;margin-bottom:10px}
+.card-title{font-family:var(--serif);font-size:18px;font-weight:600;line-height:1.35;color:var(--navy);margin-bottom:8px;letter-spacing:-.01em;transition:color .15s}
+.card:hover .card-title{color:var(--sage)}
+.card-excerpt{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:12px}
+.card-meta{font-size:12px;color:var(--muted);font-weight:600}
+
+/* MILESTONE SECTION */
+.milestones{background:var(--navy);padding:56px 0}
+.milestones-in{max-width:1160px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.milestone-text .sec-label{color:rgba(255,255,255,.4)}
+.milestone-text .sec-title{color:#fff}
+.milestone-desc{font-size:14px;color:rgba(255,255,255,.6);line-height:1.8;margin-bottom:24px}
+.milestone-btn{background:var(--sage);color:#fff;font-size:14px;font-weight:700;padding:12px 24px;border-radius:24px;display:inline-block;transition:opacity .15s}
+.milestone-btn:hover{opacity:.85}
+.milestone-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.milestone-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);padding:20px;border-radius:12px}
+.milestone-month{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);margin-bottom:6px}
+.milestone-fact{font-family:var(--serif);font-size:15px;color:rgba(255,255,255,.85);font-weight:400;line-height:1.5}
+
+/* REASSURANCE STRIP */
+.reassurance{background:var(--cream);padding:40px 0}
+.reassurance-in{max-width:1160px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.reassurance-item{text-align:center;padding:24px 16px}
+.reassurance-icon{width:48px;height:48px;background:var(--bg2);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;border:1.5px solid var(--border)}
+.reassurance-icon svg{width:22px;height:22px;stroke:var(--sage);fill:none;stroke-width:2}
+.reassurance-label{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.reassurance-sub{font-size:12px;color:var(--muted);line-height:1.5}
+
+/* NEWSLETTER */
+.newsletter{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0}
+.nl-in{max-width:520px;margin:0 auto;padding:0 24px;text-align:center}
+.nl-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(122,158,126,.1);border:1px solid rgba(122,158,126,.2);padding:4px 12px;border-radius:100px;font-size:11px;font-weight:700;color:var(--sage);margin-bottom:16px}
+.nl-title{font-family:var(--serif);font-size:clamp(26px,3.5vw,36px);font-weight:600;letter-spacing:-.02em;color:var(--navy);margin-bottom:10px}
+.nl-sub{font-size:14px;color:var(--muted);margin-bottom:28px}
+.nl-form{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.nl-input{flex:1;min-width:220px;background:var(--bg);border:1.5px solid var(--border);border-radius:24px;color:var(--text);font-size:14px;font-family:var(--sans);padding:12px 20px;outline:none;transition:border-color .15s}
+.nl-input:focus{border-color:var(--sage)}
+.nl-input::placeholder{color:var(--muted)}
+.nl-btn{background:var(--navy);color:#fff;font-size:14px;font-weight:700;padding:12px 24px;border-radius:24px;border:none;cursor:pointer;font-family:var(--sans);transition:background .15s}
+.nl-btn:hover{background:var(--navy2)}
+
+/* FOOTER */
+footer{background:var(--navy);padding:48px 0 24px}
+.footer-in{max-width:1160px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:32px}
+.footer-logo{font-family:var(--serif);font-size:20px;font-weight:600;color:#fff;margin-bottom:8px}
+.footer-logo span{color:var(--sage)}
+.footer-desc{font-size:13px;color:rgba(255,255,255,.4);line-height:1.7}
+.footer-head{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:14px}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:13px;color:rgba(255,255,255,.5);transition:color .15s}
+.footer-links a:hover{color:var(--sage)}
+.footer-bottom{max-width:1160px;margin:0 auto;padding:24px 24px 0;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between}
+.footer-copy{font-size:12px;color:rgba(255,255,255,.25)}
+
+@media(max-width:900px){
+  .hero-in{grid-template-columns:1fr}
+  .hero-image{display:none}
+  .card-grid{grid-template-columns:1fr 1fr}
+  .milestones-in{grid-template-columns:1fr}
+  .reassurance-in{grid-template-columns:1fr 1fr}
+  .footer-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .nav-links{display:none}
+  .card-grid{grid-template-columns:1fr}
+  .footer-in{grid-template-columns:1fr}
+  .reassurance-in{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav-logo">Newborn<span>IQ</span></div>
-  <div class="nav-links">
-    <a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy</a>
+<nav class="site-nav">
+  <div class="nav-in">
+    <a href="./" class="nav-logo">Newborn<span>IQ</span></a>
+    <div class="nav-links">
+      <a href="./">Newborn Basics</a>
+      <a href="./">Sleep</a>
+      <a href="./">Feeding</a>
+      <a href="./">Development</a>
+      <a href="./">Postpartum</a>
+    </div>
+    <a href="./" class="nav-cta">Free Sleep Guide</a>
   </div>
 </nav>
 
-<div class="hero">
-  <div class="hero-img">
-    <img id="pxl-img" alt="Newborn IQ">
-    <div class="hero-img-ph"></div>
-  </div>
-  <div class="hero-content">
-    <div class="hero-eyebrow">Newborn & Baby Care</div>
-    <h1 class="hero-title" id="hero-title">Evidence-Based Newborn & Baby Care</h1>
-    <p class="hero-desc" id="hero-desc">Newborn care advice grounded in current pediatric research - calm, practical, and free of the fear-mongering.</p>
-    <a class="hero-cta" href="#" id="hero-cta">Read more →</a>
-  </div>
-</div>
-
-<div class="wrap">
-  <div class="s-label">Latest Articles</div>
-  <div class="bloom-grid" id="bloom-grid"></div>
-
-  <div id="pull-feat-wrap"></div>
-
-  <div class="s-label">More to Read</div>
-  <div class="bloom-grid" id="more-grid"></div>
-</div>
-
-<div class="wrap">
-  <div class="nl-wrap">
-    <h2>The Parent Brief</h2>
-    <p>Monthly newborn and baby care updates from a NICU nurse perspective.</p>
-    <form id="nl-f" onsubmit="nlSub(event)">
-      <div class="nl-row">
-        <input class="nl-input" type="email" placeholder="your@email.com" required>
-        <button class="nl-btn" type="submit">Subscribe</button>
+<section class="hero">
+  <div class="hero-in">
+    <div class="hero-text">
+      <div class="hero-pill"><span class="hero-pill-dot"></span>Trusted by 80,000+ new parents</div>
+      <h1 class="hero-h1">Confident parenting starts with<em> reliable guidance.</em></h1>
+      <p class="hero-desc">Evidence-based newborn care, sleep science, feeding support, and developmental milestones - from the first night home through month twelve.</p>
+      <div class="hero-trust">
+        <div class="trust-item"><span class="trust-num">500+</span><span class="trust-label">Research-backed guides</span></div>
+        <div class="trust-item"><span class="trust-num">0</span><span class="trust-label">Sponsored advice</span></div>
+        <div class="trust-item"><span class="trust-num">12mo</span><span class="trust-label">Complete first year</span></div>
       </div>
+      <div class="hero-btns">
+        <a href="./" class="btn-navy">Start Here</a>
+        <a href="./" class="btn-soft">About Us</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-image-main"><img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=80" alt="Newborn care"></div>
+      <div class="hero-image-badge">
+        <div class="hero-image-badge-icon">&#128338;</div>
+        <div class="hero-image-badge-text">Sleep milestone: 6 weeks</div>
+        <div class="hero-image-badge-sub">First 4-hour stretch begins</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="topic-strip">
+  <div class="topic-in">
+    <div class="topic-item active" onclick="setFilter('all')">All Topics</div>
+    <div class="topic-item" onclick="setFilter('newborn')">Newborn Basics</div>
+    <div class="topic-item" onclick="setFilter('sleep')">Sleep</div>
+    <div class="topic-item" onclick="setFilter('feeding')">Feeding</div>
+    <div class="topic-item" onclick="setFilter('development')">Development</div>
+    <div class="topic-item" onclick="setFilter('postpartum')">Postpartum</div>
+    <div class="topic-item" onclick="setFilter('health')">Health</div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-label">Most Helpful</div>
+    <h2 class="sec-title">Guides New Parents Trust</h2>
+    <div class="card-grid" id="cardGrid"></div>
+  </div>
+</section>
+
+<div class="reassurance">
+  <div class="reassurance-in">
+    <div class="reassurance-item">
+      <div class="reassurance-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div class="reassurance-label">Evidence-Based</div>
+      <div class="reassurance-sub">Every guide references pediatric research and AAP guidelines</div>
+    </div>
+    <div class="reassurance-item">
+      <div class="reassurance-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg></div>
+      <div class="reassurance-label">Parent-Written</div>
+      <div class="reassurance-sub">Real experiences from parents who've been exactly where you are</div>
+    </div>
+    <div class="reassurance-item">
+      <div class="reassurance-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="reassurance-label">Always Updated</div>
+      <div class="reassurance-sub">Content reviewed and updated with the latest pediatric guidance</div>
+    </div>
+    <div class="reassurance-item">
+      <div class="reassurance-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <div class="reassurance-label">No Judgment</div>
+      <div class="reassurance-sub">Fed is best. Bed-sharing guide or crib guide - you choose what fits</div>
+    </div>
+  </div>
+</div>
+
+<div class="milestones">
+  <div class="milestones-in">
+    <div class="milestone-text">
+      <div class="sec-label">First Year Guide</div>
+      <h2 class="sec-title">Month-by-Month Milestones</h2>
+      <p class="milestone-desc">What to expect - and when to stop comparing. A realistic guide to your baby's first year that celebrates range, not checkboxes.</p>
+      <a href="./" class="milestone-btn">Read the Full Guide</a>
+    </div>
+    <div class="milestone-grid">
+      <div class="milestone-card"><div class="milestone-month">Months 0-1</div><div class="milestone-fact">Responds to voice, tracks movement with eyes, irregular sleep of 16-18hrs</div></div>
+      <div class="milestone-card"><div class="milestone-month">Months 2-3</div><div class="milestone-fact">Social smiles begin, recognizes faces, sleeps up to 5hrs in a stretch</div></div>
+      <div class="milestone-card"><div class="milestone-month">Months 4-6</div><div class="milestone-fact">Rolls over, laughs out loud, reaches for objects, ready for solids</div></div>
+      <div class="milestone-card"><div class="milestone-month">Months 7-12</div><div class="milestone-fact">Sits independently, first words emerging, separation anxiety peaks</div></div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-label">More Guides</div>
+    <h2 class="sec-title">All Topics</h2>
+    <div class="card-grid" id="moreGrid"></div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="nl-in">
+    <div class="nl-badge">Weekly Guide</div>
+    <h2 class="nl-title">A gentle email, every week.</h2>
+    <p class="nl-sub">What's normal this week, what's coming next, and one thing to try. No overwhelm.</p>
+    <form class="nl-form" onsubmit="return false">
+      <input class="nl-input" type="email" placeholder="your@email.com">
+      <button class="nl-btn" type="submit">Subscribe</button>
     </form>
   </div>
-</div>
+</section>
 
-<footer class="foot">
-  <span>© Newborn IQ · Evidence-based newborn care guidance from a NICU nursing background.</span>
-  <div class="foot-links">
-    <a href="./">Home</a><a href="about.html">About</a>
-    <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+<footer>
+  <div class="footer-in">
+    <div>
+      <div class="footer-logo">Newborn<span>IQ</span></div>
+      <p class="footer-desc">Calm, evidence-based guidance for the first year of parenthood. No perfection required.</p>
+    </div>
+    <div>
+      <div class="footer-head">Topics</div>
+      <div class="footer-links">
+        <a href="./">Newborn Basics</a>
+        <a href="./">Sleep Training</a>
+        <a href="./">Breastfeeding</a>
+        <a href="./">Formula</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-head">Development</div>
+      <div class="footer-links">
+        <a href="./">Milestones</a>
+        <a href="./">Motor Skills</a>
+        <a href="./">Language</a>
+        <a href="./">Postpartum</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-head">Site</div>
+      <div class="footer-links">
+        <a href="./about/">About</a>
+        <a href="./">Privacy</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">&copy; 2026 NewbornIQ. All rights reserved.</div>
+    <div class="footer-copy">Trusted parenting guidance.</div>
   </div>
 </footer>
 
 <script>
-async function loadPosts(){
-  try{
-    var r=await fetch('./articles.json');if(!r.ok)throw 0;
-    var posts=await r.json();if(!posts||!posts.length)throw 0;
-    /* hero */
-    var h=posts[0];
-    if(h.image){var hi=document.getElementById('pxl-img');if(hi){hi.onload=function(){hi.style.opacity='1';};hi.src=h.image;}}
-    var ht=document.getElementById('hero-title'),hd=document.getElementById('hero-desc'),hc=document.getElementById('hero-cta');
-    if(ht)ht.innerHTML='<a href="./'+h.slug+'/" style="color:inherit">'+h.title+'</a>';
-    if(hd)hd.textContent=h.meta_description||'';
-    if(hc)hc.href='./'+h.slug+'/';
-    /* card fn */
-    function card(p){return '<a href="./'+p.slug+'/" style="display:block"><div class="bloom-card">'+(p.image?'<img src="'+p.image+'" alt="'+p.title+'" loading="lazy">':'<div class="bloom-card-ph"></div>')+'<div class="bloom-card-body"><div class="bloom-cat">Newborn & Baby Care</div><div class="bloom-title">'+p.title+'</div><div class="bloom-desc">'+(p.meta_description||'').slice(0,110)+'</div><div class="bloom-date">'+(p.date_iso||'')+'</div></div></div></a>';}
-    var bg=document.getElementById('bloom-grid');if(bg)bg.innerHTML=posts.slice(1,4).map(card).join('');
-    /* pull feature */
-    if(posts[4]){
-      var pf=document.getElementById('pull-feat-wrap');
-      if(pf)pf.innerHTML='<a href="./'+posts[4].slug+'/" style="display:block"><div class="pull-feat">'+(posts[4].image?'<img src="'+posts[4].image+'" alt="'+posts[4].title+'" loading="lazy">':'')+'<div class="pull-feat-body"><div class="pull-feat-eyebrow">Newborn & Baby Care</div><div class="pull-feat-title">'+posts[4].title+'</div><div class="pull-feat-desc">'+(posts[4].meta_description||'').slice(0,160)+'</div><span class="pull-feat-link">Read full article →</span></div></div></a>';
-    }
-    var mg=document.getElementById('more-grid');if(mg)mg.innerHTML=posts.slice(5,8).map(card).join('');
-  }catch(e){
-    var bg2=document.getElementById('bloom-grid');
-    if(bg2)bg2.innerHTML='<div class="bloom-card"><div class="bloom-card-ph"></div><div class="bloom-card-body"><div class="bloom-cat">Newborn & Baby Care</div><div class="bloom-title">First articles coming soon</div><div class="bloom-desc">Newborn care advice grounded in current pediatric research - calm, practical, and free of the fear-mongering.</div></div></div>';
-  }
+const PLACEHOLDER_ARTS=[
+  {title:"Your Newborn's Sleep Cycles Explained (And Why They're Not 'Wrong')",slug:"newborn-sleep-cycles",cat:"sleep",excerpt:"Newborns don't sleep like adults. Understanding their sleep architecture is the key to surviving the first weeks.",mins:8},
+  {title:"Safe Sleep Guidelines in 2025: The AAP Checklist Every Parent Needs",slug:"safe-sleep-guidelines",cat:"newborn",excerpt:"Back to sleep, firm surface, alone in the crib - and nine other things the research is clear on.",mins:6},
+  {title:"Breastfeeding vs. Formula: The Honest Comparison No One Wrote",slug:"breastfeeding-vs-formula",cat:"feeding",excerpt:"Both are good. The decision is personal, practical, and nobody else's business. Here's the full picture.",mins:10},
+  {title:"The 4-Month Sleep Regression: What's Happening and How to Get Through It",slug:"4-month-sleep-regression",cat:"sleep",excerpt:"It's not a setback - it's a developmental leap. What causes it and the gentle approaches that actually help.",mins:7},
+  {title:"When to Call the Pediatrician: A Clear Decision Framework",slug:"when-to-call-pediatrician",cat:"health",excerpt:"Fever charts, color changes, feeding refusals - a no-panic guide to knowing when to worry.",mins:6},
+  {title:"Tummy Time: Why It Matters and How to Make It Less Miserable",slug:"tummy-time-guide",cat:"development",excerpt:"Most babies hate it at first. Ten practical strategies to build up to 30 minutes a day without the screaming.",mins:5},
+  {title:"Postpartum Recovery: The Physical Timeline Nobody Prepares You For",slug:"postpartum-recovery-timeline",cat:"postpartum",excerpt:"Six weeks is a floor, not a finish line. The real physical recovery arc and what support actually helps.",mins:9},
+  {title:"Starting Solids at 6 Months: A Simple, Flexible Guide",slug:"starting-solids-6-months",cat:"feeding",excerpt:"Baby-led weaning vs. purees, allergen introduction, first foods - without the overwhelming contradictions.",mins:8},
+];
+
+let arts=[];
+let activeFilter="all";
+
+function setFilter(f){
+  activeFilter=f;
+  document.querySelectorAll(".topic-item").forEach(t=>t.classList.toggle("active",t.textContent.toLowerCase()===f||(f==="all"&&t.textContent==="All Topics")));
+  renderCards();
 }
-function nlSub(e){e.preventDefault();document.getElementById('nl-f').innerHTML='<p style="color:#0369a1;font-weight:600;font-size:15px;padding:12px 0">✓ Welcome to the community!</p>';}
-loadPosts();
-/* banner loader: pexels → unsplash → picsum */
-(function(){
-  var el=document.getElementById('pxl-img');
-  var cr=document.getElementById('pxl-cred');
-  if(!el)return;
-  var SOURCES=['pexels', 'unsplash'];
-  var Q=encodeURIComponent('newborn baby infant care peaceful sleeping');
-  var FALLBACK='https://picsum.photos/seed/207/1400/400';
-  function showImg(src,cred){
-    el.onload=function(){el.style.opacity='1';if(cred&&cr){cr.textContent=cred;cr.style.opacity='1';}};
-    el.src=src;
-  }
-  function tryUnsplash(){
-    var uk=localStorage.getItem('unsplashKey');
-    if(!uk){showImg(FALLBACK,'');return;}
-    fetch('https://api.unsplash.com/photos/random?query='+Q+'&count=1&orientation=landscape&client_id='+uk)
-      .then(function(r){return r.json();}).then(function(d){
-        var p=Array.isArray(d)?d[0]:d;
-        if(p&&p.urls&&p.urls.regular){showImg(p.urls.regular,'Photo: '+((p.user&&p.user.name)||'Unsplash')+' / Unsplash');}
-        else{showImg(FALLBACK,'');}
-      }).catch(function(){showImg(FALLBACK,'');});
-  }
-  function tryPexels(){
-    var k=localStorage.getItem('pexelsKey');
-    if(!k){if(SOURCES.indexOf('unsplash')>=0)tryUnsplash();else showImg(FALLBACK,'');return;}
-    fetch('https://api.pexels.com/v1/search?query='+Q+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
-      .then(function(r){return r.json();}).then(function(d){
-        if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else if(SOURCES.indexOf('unsplash')>=0){tryUnsplash();}
-        else{showImg(FALLBACK,'');}
-      }).catch(function(){if(SOURCES.indexOf('unsplash')>=0)tryUnsplash();else showImg(FALLBACK,'');});
-  }
-  if(SOURCES.indexOf('pexels')>=0){tryPexels();}
-  else if(SOURCES.indexOf('unsplash')>=0){tryUnsplash();}
-  else{showImg(FALLBACK,'');}
-})();
+
+function renderCards(){
+  const g=document.getElementById("cardGrid");
+  const filtered=activeFilter==="all"?arts:arts.filter(a=>a.cat===activeFilter);
+  g.innerHTML=filtered.slice(0,6).map(a=>`
+    <a href="./${a.slug}/" class="card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=70" alt="${a.title}" loading="lazy"></div>
+      <div class="card-body">
+        <span class="card-tag">${a.cat}</span>
+        <h3 class="card-title">${a.title}</h3>
+        <p class="card-excerpt">${a.excerpt}</p>
+        <div class="card-meta">${a.mins} min read</div>
+      </div>
+    </a>`).join("");
+}
+
+function renderMore(){
+  document.getElementById("moreGrid").innerHTML=(arts[6]?arts.slice(6,9):arts.slice(0,3)).map(a=>`
+    <a href="./${a.slug}/" class="card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=70" alt="${a.title}" loading="lazy"></div>
+      <div class="card-body">
+        <span class="card-tag">${a.cat}</span>
+        <h3 class="card-title">${a.title}</h3>
+        <p class="card-excerpt">${a.excerpt}</p>
+        <div class="card-meta">${a.mins} min read</div>
+      </div>
+    </a>`).join("");
+}
+
+async function load(){
+  try{const r=await fetch("./articles.json");if(r.ok){arts=await r.json();}else{arts=PLACEHOLDER_ARTS;}}catch{arts=PLACEHOLDER_ARTS;}
+  renderCards();
+  renderMore();
+}
+load();
 </script>
-</body></html>
+</body>
+</html>
