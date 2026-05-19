@@ -309,6 +309,174 @@ footer{background:var(--navy);padding:48px 0 24px}
 .footer-bottom{max-width:1160px;margin:0 auto;padding:24px 24px 0;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between}
 .footer-copy{font-size:12px;color:rgba(255,255,255,.25)}
 
+/* TOOLS */
+.tools{background:var(--bg2);padding:64px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.tools-head{text-align:center;max-width:640px;margin:0 auto 40px}
+.tools-head .sec-label{color:var(--sage)}
+.tools-sub{font-size:14px;color:var(--muted);margin-top:10px;line-height:1.7}
+.tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tool{background:var(--cream);border:1px solid var(--border);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:14px;transition:box-shadow .2s,transform .2s}
+.tool:hover{box-shadow:0 10px 32px rgba(30,58,95,.08);transform:translateY(-2px)}
+.tool-badge{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);background:rgba(122,158,126,.12);padding:4px 10px;border-radius:100px;align-self:flex-start}
+.tool-title{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--navy);letter-spacing:-.01em;line-height:1.3}
+.tool-desc{font-size:13px;color:var(--muted);line-height:1.6}
+.tool-field{display:flex;flex-direction:column;gap:6px}
+.tool-label{font-size:12px;font-weight:700;color:var(--navy)}
+.tool-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tool-input,.tool-select{flex:1;min-width:0;background:var(--bg2);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:14px;font-family:var(--sans);padding:10px 14px;outline:none;transition:border-color .15s}
+.tool-input:focus,.tool-select:focus{border-color:var(--sage)}
+.tool-out{background:var(--bg2);border:1px dashed var(--border);border-radius:12px;padding:16px;margin-top:auto}
+.tool-out-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.tool-out-main{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:6px}
+.tool-out-detail{font-size:13px;color:var(--text);line-height:1.6}
+.tool-out-detail strong{color:var(--navy);font-weight:700}
+.tool-pill-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tool-pill{background:rgba(122,158,126,.12);color:var(--sage);font-size:11px;font-weight:700;padding:4px 10px;border-radius:100px}
+.tool-disclaimer{max-width:760px;margin:32px auto 0;text-align:center;font-size:12px;color:var(--muted);line-height:1.7;padding:16px 20px;background:var(--warm);border-radius:12px}
+.tool-disclaimer strong{color:var(--navy);font-weight:700}
+@media(max-width:900px){.tools-grid{grid-template-columns:1fr}}
+
+@media(max-width:900px){
+  .hero-in{grid-template-columns:1fr}
+  .hero-image{display:none}
+  .card-grid{grid-template-columns:1fr 1fr}
+  .milestones-in{grid-template-columns:1fr}
+  .reassurance-in{grid-template-columns:1fr 1fr}
+  .footer-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .nav-links{display:none}
+  .card-grid{grid-template-columns:1fr}
+  .footer-in{grid-template-columns:1fr}
+  .reassurance-in{grid-template-columns:1fr}
+}
+/* page */
+:root{
+  --bg:#fafbf8;
+  --bg2:#fff;
+  --cream:#f5f0e8;
+  --navy:#1e3a5f;
+  --navy2:#162d4a;
+  --sage:#7a9e7e;
+  --warm:#f0ebe0;
+  --text:#1a2332;
+  --muted:#7a8697;
+  --border:#e4e9ef;
+  --serif:'Lora',serif;
+  --sans:'Nunito',sans-serif;
+}
+/* NAV */
+.site-nav{background:var(--bg2);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-in{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:64px;gap:40px}
+.nav-logo{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--navy)}
+.nav-logo span{color:var(--sage)}
+.nav-links{display:flex;gap:0;flex:1;flex-wrap:nowrap;overflow:hidden}
+.nav-links a{font-size:14px;font-weight:600;padding:0 16px;height:64px;display:flex;align-items:center;color:var(--muted);transition:color .15s}
+.nav-links a:hover{color:var(--navy)}
+.nav-cta{margin-left:auto;background:var(--navy);color:#fff;font-size:14px;font-weight:700;padding:10px 20px;border-radius:24px;transition:background .15s}
+.nav-cta:hover{background:var(--navy2)}
+
+/* HERO - warm and welcoming */
+.hero{background:var(--cream);overflow:hidden}
+.hero-in{max-width:1160px;margin:0 auto;padding:60px 24px;display:grid;grid-template-columns:1fr 380px;gap:60px;align-items:center}
+.hero-text{}
+.hero-pill{display:inline-flex;align-items:center;gap:6px;background:var(--bg2);border:1px solid var(--border);padding:5px 14px 5px 8px;border-radius:100px;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:20px}
+.hero-pill-dot{width:8px;height:8px;background:var(--sage);border-radius:50%}
+.hero-h1{font-family:var(--serif);font-size:clamp(36px,4.5vw,56px);font-weight:600;line-height:1.15;letter-spacing:-.02em;color:var(--navy);margin-bottom:16px}
+.hero-h1 em{color:var(--sage);font-style:italic}
+.hero-desc{font-size:15px;color:var(--muted);max-width:440px;margin-bottom:32px;line-height:1.8}
+.hero-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
+.trust-item{text-align:center;padding:16px 12px;background:var(--bg2);border-radius:12px}
+.trust-num{font-family:var(--serif);font-size:24px;font-weight:600;color:var(--navy);display:block}
+.trust-label{font-size:11px;color:var(--muted);font-weight:600;line-height:1.4;margin-top:3px}
+.hero-btns{display:flex;gap:12px}
+.btn-navy{background:var(--navy);color:#fff;font-size:14px;font-weight:700;padding:12px 24px;border-radius:24px;transition:background .15s}
+.btn-navy:hover{background:var(--navy2)}
+.btn-soft{background:var(--bg2);border:2px solid var(--border);color:var(--navy);font-size:14px;font-weight:600;padding:11px 24px;border-radius:24px;transition:all .15s}
+.btn-soft:hover{border-color:var(--sage);color:var(--sage)}
+.hero-image{position:relative}
+.hero-image-main{aspect-ratio:3/4;background:var(--warm);border-radius:24px;overflow:hidden}
+.hero-image-main img{width:100%;height:100%;object-fit:cover}
+.hero-image-badge{position:absolute;bottom:-16px;left:-16px;background:var(--bg2);border-radius:16px;padding:16px 20px;box-shadow:0 8px 32px rgba(30,58,95,.12)}
+.hero-image-badge-icon{font-size:24px;margin-bottom:4px}
+.hero-image-badge-text{font-size:13px;font-weight:700;color:var(--navy)}
+.hero-image-badge-sub{font-size:11px;color:var(--muted);margin-top:2px}
+
+/* TOPIC STRIP */
+.topic-strip{background:var(--navy);padding:0}
+.topic-in{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;overflow-x:auto;scrollbar-width:none}
+.topic-in::-webkit-scrollbar{display:none}
+.topic-item{font-size:13px;font-weight:700;color:rgba(255,255,255,.5);padding:16px 20px;white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s}
+.topic-item:hover,.topic-item.active{color:#fff;border-color:var(--sage)}
+
+/* SECTIONS */
+.section{padding:52px 0}
+.container{max-width:1160px;margin:0 auto;padding:0 24px}
+.sec-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);margin-bottom:8px}
+.sec-title{font-family:var(--serif);font-size:clamp(24px,3vw,32px);font-weight:600;letter-spacing:-.02em;color:var(--navy);margin-bottom:28px}
+
+/* CARD GRID - soft and warm */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:var(--bg2);border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(30,58,95,.08)}
+.card-img{aspect-ratio:16/9;background:var(--warm);overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.card:hover .card-img img{transform:scale(1.03)}
+.card-body{padding:20px}
+.card-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sage);background:rgba(122,158,126,.1);padding:3px 8px;border-radius:4px;margin-bottom:10px}
+.card-title{font-family:var(--serif);font-size:18px;font-weight:600;line-height:1.35;color:var(--navy);margin-bottom:8px;letter-spacing:-.01em;transition:color .15s}
+.card:hover .card-title{color:var(--sage)}
+.card-excerpt{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:12px}
+.card-meta{font-size:12px;color:var(--muted);font-weight:600}
+
+/* MILESTONE SECTION */
+.milestones{background:var(--navy);padding:56px 0}
+.milestones-in{max-width:1160px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.milestone-text .sec-label{color:rgba(255,255,255,.4)}
+.milestone-text .sec-title{color:#fff}
+.milestone-desc{font-size:14px;color:rgba(255,255,255,.6);line-height:1.8;margin-bottom:24px}
+.milestone-btn{background:var(--sage);color:#fff;font-size:14px;font-weight:700;padding:12px 24px;border-radius:24px;display:inline-block;transition:opacity .15s}
+.milestone-btn:hover{opacity:.85}
+.milestone-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.milestone-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);padding:20px;border-radius:12px}
+.milestone-month{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);margin-bottom:6px}
+.milestone-fact{font-family:var(--serif);font-size:15px;color:rgba(255,255,255,.85);font-weight:400;line-height:1.5}
+
+/* REASSURANCE STRIP */
+.reassurance{background:var(--cream);padding:40px 0}
+.reassurance-in{max-width:1160px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.reassurance-item{text-align:center;padding:24px 16px}
+.reassurance-icon{width:48px;height:48px;background:var(--bg2);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;border:1.5px solid var(--border)}
+.reassurance-icon svg{width:22px;height:22px;stroke:var(--sage);fill:none;stroke-width:2}
+.reassurance-label{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.reassurance-sub{font-size:12px;color:var(--muted);line-height:1.5}
+
+/* NEWSLETTER */
+.newsletter{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0}
+.nl-in{max-width:520px;margin:0 auto;padding:0 24px;text-align:center}
+.nl-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(122,158,126,.1);border:1px solid rgba(122,158,126,.2);padding:4px 12px;border-radius:100px;font-size:11px;font-weight:700;color:var(--sage);margin-bottom:16px}
+.nl-title{font-family:var(--serif);font-size:clamp(26px,3.5vw,36px);font-weight:600;letter-spacing:-.02em;color:var(--navy);margin-bottom:10px}
+.nl-sub{font-size:14px;color:var(--muted);margin-bottom:28px}
+.nl-form{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.nl-input{flex:1;min-width:220px;background:var(--bg);border:1.5px solid var(--border);border-radius:24px;color:var(--text);font-size:14px;font-family:var(--sans);padding:12px 20px;outline:none;transition:border-color .15s}
+.nl-input:focus{border-color:var(--sage)}
+.nl-input::placeholder{color:var(--muted)}
+.nl-btn{background:var(--navy);color:#fff;font-size:14px;font-weight:700;padding:12px 24px;border-radius:24px;border:none;cursor:pointer;font-family:var(--sans);transition:background .15s}
+.nl-btn:hover{background:var(--navy2)}
+
+/* FOOTER */
+footer{background:var(--navy);padding:48px 0 24px}
+.footer-in{max-width:1160px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:32px}
+.footer-logo{font-family:var(--serif);font-size:20px;font-weight:600;color:#fff;margin-bottom:8px}
+.footer-logo span{color:var(--sage)}
+.footer-desc{font-size:13px;color:rgba(255,255,255,.4);line-height:1.7}
+.footer-head{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:14px}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:13px;color:rgba(255,255,255,.5);transition:color .15s}
+.footer-links a:hover{color:var(--sage)}
+.footer-bottom{max-width:1160px;margin:0 auto;padding:24px 24px 0;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between}
+.footer-copy{font-size:12px;color:rgba(255,255,255,.25)}
+
 @media(max-width:900px){
   .hero-in{grid-template-columns:1fr}
   .hero-image{display:none}
@@ -891,9 +1059,9 @@ footer{background:var(--navy);padding:48px 0 24px}
 .art{max-width:760px;margin:48px auto;padding:0 24px 80px}
 .hdr{background:#f7f8fa;border-bottom:1px solid #e2e5ea;padding:18px 0}
 .hi{max-width:760px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center}
-h1{font-family:'Inter',sans-serif;font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.2;margin-bottom:16px;color:#111111}
+h1{font-family:'Inter',sans-serif;font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.2;margin-bottom:16px;color:#1a2332}
 p{margin-bottom:18px;color:#444;line-height:1.75}
-.intro{font-size:18px;line-height:1.7;color:#111111}
+.intro{font-size:18px;line-height:1.7;color:#1a2332}
 .concl{background:#f7f8fa;border-left:4px solid #1e3a5f;padding:20px 24px;border-radius:0 8px 8px 0;margin-top:40px}
 .meta{font-size:13px;color:#999;margin-bottom:24px}
 </style>
@@ -921,16 +1089,16 @@ p{margin-bottom:18px;color:#444;line-height:1.75}
   <p class="intro"><p>Most new parents describe their first week home the same way: they're holding a baby who won't stop crying, and they have no idea why. They've fed her. They've changed him. They've rocked, shushed, swaddled, and Googled at 3 a.m. And the baby is still crying. Here's the thing that nobody tells you clearly enough: crying is not a single signal. It's a language, and it has dialects. A hunger cry sounds different from a pain cry sounds different from an overstimulation cry, and learning to tell them apart is one of the most practical skills a new parent can build in those first weeks.</p></p>
   <p><p>My editorial position on this is pretty firm. I don't think parents need to decode every whimper with clinical precision, and I think the pressure to "always know" what your baby needs causes more anxiety than it solves. But I do think there's real, accessible science behind infant cry patterns, and that understanding even the basics can cut your stress significantly. Research published in 2019 in the journal <em>Early Human Development</em> found that trained listeners could distinguish cry types with around 75 to 80 percent accuracy when they understood specific acoustic features. You don't need a spectrometer. You just need a framework, some repetition, and a little grace for yourself.</p></p>
   
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">The Four Cry Types You'll Actually Encounter</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#1a2332">The Four Cry Types You'll Actually Encounter</h2>
 <div><p>In my work with NICU families, I've spent years helping parents learn to read infant cues before their babies are even strong enough for a full cry. That experience taught me that most newborn cries fall into four broad categories: hunger, discomfort (which includes gas and position), pain, and overstimulation. Each has a general acoustic signature, though nothing is perfectly clean in real life.</p><p>A hunger cry tends to start low and rhythmic, almost like a chant. It builds gradually if ignored and usually comes with rooting, hand-to-mouth movements, and lip smacking before the cry even starts. Those pre-cry cues are your best window. If you catch hunger at the rooting stage, you can often avoid the cry entirely. The discomfort cry is more variable, often staccato, and frequently accompanied by leg pulling or a rigid abdomen. It doesn't have the same escalating rhythm as hunger.</p><p>A pain cry is different and most parents recognize it instinctively even the first time they hear it. It's high-pitched, sharp, and sudden, almost like a yelp that then sustains. The baby's face goes red fast. There's often a brief moment of silence right before the cry, which researchers call the "expiratory pause," and it's striking. Overstimulation, on the other hand, tends to come at the end of a long awake stretch. The baby may have been content and then just... tips over. The cry is fussier, less urgent, and often calms with reduced input rather than increased soothing.</p></div>
 
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">Why Cry Frequency Tells You as Much as Cry Type</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#1a2332">Why Cry Frequency Tells You as Much as Cry Type</h2>
 <div><p>Parents fixate on what a cry sounds like, but honestly, when it happens matters just as much. Newborns have very short awake windows, often somewhere between 45 and 90 minutes in the first two weeks. When you start tracking the timing of cries, patterns emerge quickly. A baby who cries 20 minutes after waking is probably hungry or uncomfortable. A baby who cries after 60 to 75 minutes of being awake is almost certainly overtired, and the soothing strategy shifts entirely.</p><p>I always tell parents to keep a loose mental note of the last feed time and the last sleep time before reaching for solutions. Those two data points answer most questions. If it's been more than 2 hours since the last feed for a newborn, hunger is your first stop. If your baby has been awake for over an hour and is starting to fuss with eye-rubbing or gaze-aversion, the goal is sleep, not stimulation. Understanding <a href="/newborn-sleep-cycles-week-one/">what's actually normal in a newborn's sleep cycles during week one</a> makes this timing framework click into place much faster.</p><p>Evening fussiness is its own category and deserves acknowledgment. The so-called "witching hour" is real, it typically runs between 5 p.m. and 11 p.m., and it's not always fixable. At least in my experience, this is the period where parents try the most interventions and feel the most like failures. The honest answer is that some of it is neurological, related to an immature nervous system winding down after a day of sensory input. You're not missing something. You're just getting through it.</p></div>
 
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">The Common Misconception That's Making Things Harder</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#1a2332">The Common Misconception That's Making Things Harder</h2>
 <div><p>Here's a belief I run into constantly, from first-time parents and experienced ones alike: "If I respond every time my baby cries, I'll spoil them." I want to be direct about this. You cannot spoil a newborn. Full stop. Infants under 3 months don't have the neurological development for learned manipulation. Responding to their cries builds secure attachment, and secure attachment is associated with better emotional regulation later in childhood, not worse.</p><p>The fear of spoiling causes parents to hesitate, and that hesitation lets a manageable hunger cry escalate into a full distress cry. Now the baby is harder to latch, harder to settle, and everyone is more frustrated. Responding quickly to a newborn cry is not permissive parenting. It's developmentally appropriate care, and the science on this has been clear for decades.</p><p>Where this gets genuinely complicated is with babies who have medical contributors to their crying, colic, reflux, cow's milk protein sensitivity. These babies cry differently and more, and no amount of perfect cry-reading fixes an underlying physical issue. If your baby is crying for more than 3 hours a day, more than 3 days a week, for more than 3 weeks, that's the pediatric definition of colic and it warrants a conversation with your provider, not just a new soothing technique.</p></div>
 
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">Building Your Own Reference Point in the First Two Weeks</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#1a2332">Building Your Own Reference Point in the First Two Weeks</h2>
 <div><p>When I had my second baby, I remember thinking I'd have this all figured out. I was a NICU nurse. I knew infant cues. And I was still surprised by how long it took me to learn her specific cry. Because that's the truth of it: the general framework helps, but every baby has their own version of these cries, and you learn your baby's version through repetition, not theory.</p><p>The most practical thing you can do in those first 10 to 14 days is try to respond to one possible cause at a time and observe what happens. If you assume hunger and offer a feed and the baby calms, you've learned something. If you offer a feed and they're clearly not interested, you check for gas, you check for a dirty diaper, you try a position change. This systematic approach sounds slow when you're exhausted, but it actually shortens your learning curve because you're gathering real data about your specific baby rather than cycling through everything simultaneously.</p><p>Don't underestimate the power of a consistent response sequence either. Babies are pattern learners from birth. When you respond to their hunger cue the same way every time, they begin to settle faster because the sequence itself becomes a signal that relief is coming. It's not magic. It's repetition. And within a few weeks, most parents find they know what the cry means before they've consciously analyzed it. That's not a parent instinct you're born with. That's a skill you built.</p></div>
   <div class="concl"><p>Start today by writing down the time of your baby's last feed and last sleep before you try to soothe the next cry. Just those two numbers. It won't decode everything, but it'll rule out the two most common causes fast, and it'll start building the pattern recognition that makes the next few weeks considerably less overwhelming. You're not supposed to know all of this yet. You're learning a new person.</p></div>
 </div><div id="comments-section" style="max-width:760px;margin:64px auto 0;padding:0 24px 48px">
