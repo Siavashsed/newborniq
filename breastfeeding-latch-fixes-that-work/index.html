@@ -309,6 +309,174 @@ footer{background:var(--navy);padding:48px 0 24px}
 .footer-bottom{max-width:1160px;margin:0 auto;padding:24px 24px 0;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between}
 .footer-copy{font-size:12px;color:rgba(255,255,255,.25)}
 
+/* TOOLS */
+.tools{background:var(--bg2);padding:64px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.tools-head{text-align:center;max-width:640px;margin:0 auto 40px}
+.tools-head .sec-label{color:var(--sage)}
+.tools-sub{font-size:14px;color:var(--muted);margin-top:10px;line-height:1.7}
+.tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tool{background:var(--cream);border:1px solid var(--border);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:14px;transition:box-shadow .2s,transform .2s}
+.tool:hover{box-shadow:0 10px 32px rgba(30,58,95,.08);transform:translateY(-2px)}
+.tool-badge{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);background:rgba(122,158,126,.12);padding:4px 10px;border-radius:100px;align-self:flex-start}
+.tool-title{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--navy);letter-spacing:-.01em;line-height:1.3}
+.tool-desc{font-size:13px;color:var(--muted);line-height:1.6}
+.tool-field{display:flex;flex-direction:column;gap:6px}
+.tool-label{font-size:12px;font-weight:700;color:var(--navy)}
+.tool-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tool-input,.tool-select{flex:1;min-width:0;background:var(--bg2);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:14px;font-family:var(--sans);padding:10px 14px;outline:none;transition:border-color .15s}
+.tool-input:focus,.tool-select:focus{border-color:var(--sage)}
+.tool-out{background:var(--bg2);border:1px dashed var(--border);border-radius:12px;padding:16px;margin-top:auto}
+.tool-out-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.tool-out-main{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:6px}
+.tool-out-detail{font-size:13px;color:var(--text);line-height:1.6}
+.tool-out-detail strong{color:var(--navy);font-weight:700}
+.tool-pill-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tool-pill{background:rgba(122,158,126,.12);color:var(--sage);font-size:11px;font-weight:700;padding:4px 10px;border-radius:100px}
+.tool-disclaimer{max-width:760px;margin:32px auto 0;text-align:center;font-size:12px;color:var(--muted);line-height:1.7;padding:16px 20px;background:var(--warm);border-radius:12px}
+.tool-disclaimer strong{color:var(--navy);font-weight:700}
+@media(max-width:900px){.tools-grid{grid-template-columns:1fr}}
+
+@media(max-width:900px){
+  .hero-in{grid-template-columns:1fr}
+  .hero-image{display:none}
+  .card-grid{grid-template-columns:1fr 1fr}
+  .milestones-in{grid-template-columns:1fr}
+  .reassurance-in{grid-template-columns:1fr 1fr}
+  .footer-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .nav-links{display:none}
+  .card-grid{grid-template-columns:1fr}
+  .footer-in{grid-template-columns:1fr}
+  .reassurance-in{grid-template-columns:1fr}
+}
+/* page */
+:root{
+  --bg:#fafbf8;
+  --bg2:#fff;
+  --cream:#f5f0e8;
+  --navy:#1e3a5f;
+  --navy2:#162d4a;
+  --sage:#7a9e7e;
+  --warm:#f0ebe0;
+  --text:#1a2332;
+  --muted:#7a8697;
+  --border:#e4e9ef;
+  --serif:'Lora',serif;
+  --sans:'Nunito',sans-serif;
+}
+/* NAV */
+.site-nav{background:var(--bg2);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-in{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:64px;gap:40px}
+.nav-logo{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--navy)}
+.nav-logo span{color:var(--sage)}
+.nav-links{display:flex;gap:0;flex:1;flex-wrap:nowrap;overflow:hidden}
+.nav-links a{font-size:14px;font-weight:600;padding:0 16px;height:64px;display:flex;align-items:center;color:var(--muted);transition:color .15s}
+.nav-links a:hover{color:var(--navy)}
+.nav-cta{margin-left:auto;background:var(--navy);color:#fff;font-size:14px;font-weight:700;padding:10px 20px;border-radius:24px;transition:background .15s}
+.nav-cta:hover{background:var(--navy2)}
+
+/* HERO - warm and welcoming */
+.hero{background:var(--cream);overflow:hidden}
+.hero-in{max-width:1160px;margin:0 auto;padding:60px 24px;display:grid;grid-template-columns:1fr 380px;gap:60px;align-items:center}
+.hero-text{}
+.hero-pill{display:inline-flex;align-items:center;gap:6px;background:var(--bg2);border:1px solid var(--border);padding:5px 14px 5px 8px;border-radius:100px;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:20px}
+.hero-pill-dot{width:8px;height:8px;background:var(--sage);border-radius:50%}
+.hero-h1{font-family:var(--serif);font-size:clamp(36px,4.5vw,56px);font-weight:600;line-height:1.15;letter-spacing:-.02em;color:var(--navy);margin-bottom:16px}
+.hero-h1 em{color:var(--sage);font-style:italic}
+.hero-desc{font-size:15px;color:var(--muted);max-width:440px;margin-bottom:32px;line-height:1.8}
+.hero-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
+.trust-item{text-align:center;padding:16px 12px;background:var(--bg2);border-radius:12px}
+.trust-num{font-family:var(--serif);font-size:24px;font-weight:600;color:var(--navy);display:block}
+.trust-label{font-size:11px;color:var(--muted);font-weight:600;line-height:1.4;margin-top:3px}
+.hero-btns{display:flex;gap:12px}
+.btn-navy{background:var(--navy);color:#fff;font-size:14px;font-weight:700;padding:12px 24px;border-radius:24px;transition:background .15s}
+.btn-navy:hover{background:var(--navy2)}
+.btn-soft{background:var(--bg2);border:2px solid var(--border);color:var(--navy);font-size:14px;font-weight:600;padding:11px 24px;border-radius:24px;transition:all .15s}
+.btn-soft:hover{border-color:var(--sage);color:var(--sage)}
+.hero-image{position:relative}
+.hero-image-main{aspect-ratio:3/4;background:var(--warm);border-radius:24px;overflow:hidden}
+.hero-image-main img{width:100%;height:100%;object-fit:cover}
+.hero-image-badge{position:absolute;bottom:-16px;left:-16px;background:var(--bg2);border-radius:16px;padding:16px 20px;box-shadow:0 8px 32px rgba(30,58,95,.12)}
+.hero-image-badge-icon{font-size:24px;margin-bottom:4px}
+.hero-image-badge-text{font-size:13px;font-weight:700;color:var(--navy)}
+.hero-image-badge-sub{font-size:11px;color:var(--muted);margin-top:2px}
+
+/* TOPIC STRIP */
+.topic-strip{background:var(--navy);padding:0}
+.topic-in{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;overflow-x:auto;scrollbar-width:none}
+.topic-in::-webkit-scrollbar{display:none}
+.topic-item{font-size:13px;font-weight:700;color:rgba(255,255,255,.5);padding:16px 20px;white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s}
+.topic-item:hover,.topic-item.active{color:#fff;border-color:var(--sage)}
+
+/* SECTIONS */
+.section{padding:52px 0}
+.container{max-width:1160px;margin:0 auto;padding:0 24px}
+.sec-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);margin-bottom:8px}
+.sec-title{font-family:var(--serif);font-size:clamp(24px,3vw,32px);font-weight:600;letter-spacing:-.02em;color:var(--navy);margin-bottom:28px}
+
+/* CARD GRID - soft and warm */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:var(--bg2);border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(30,58,95,.08)}
+.card-img{aspect-ratio:16/9;background:var(--warm);overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.card:hover .card-img img{transform:scale(1.03)}
+.card-body{padding:20px}
+.card-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sage);background:rgba(122,158,126,.1);padding:3px 8px;border-radius:4px;margin-bottom:10px}
+.card-title{font-family:var(--serif);font-size:18px;font-weight:600;line-height:1.35;color:var(--navy);margin-bottom:8px;letter-spacing:-.01em;transition:color .15s}
+.card:hover .card-title{color:var(--sage)}
+.card-excerpt{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:12px}
+.card-meta{font-size:12px;color:var(--muted);font-weight:600}
+
+/* MILESTONE SECTION */
+.milestones{background:var(--navy);padding:56px 0}
+.milestones-in{max-width:1160px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.milestone-text .sec-label{color:rgba(255,255,255,.4)}
+.milestone-text .sec-title{color:#fff}
+.milestone-desc{font-size:14px;color:rgba(255,255,255,.6);line-height:1.8;margin-bottom:24px}
+.milestone-btn{background:var(--sage);color:#fff;font-size:14px;font-weight:700;padding:12px 24px;border-radius:24px;display:inline-block;transition:opacity .15s}
+.milestone-btn:hover{opacity:.85}
+.milestone-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.milestone-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);padding:20px;border-radius:12px}
+.milestone-month{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);margin-bottom:6px}
+.milestone-fact{font-family:var(--serif);font-size:15px;color:rgba(255,255,255,.85);font-weight:400;line-height:1.5}
+
+/* REASSURANCE STRIP */
+.reassurance{background:var(--cream);padding:40px 0}
+.reassurance-in{max-width:1160px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.reassurance-item{text-align:center;padding:24px 16px}
+.reassurance-icon{width:48px;height:48px;background:var(--bg2);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;border:1.5px solid var(--border)}
+.reassurance-icon svg{width:22px;height:22px;stroke:var(--sage);fill:none;stroke-width:2}
+.reassurance-label{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.reassurance-sub{font-size:12px;color:var(--muted);line-height:1.5}
+
+/* NEWSLETTER */
+.newsletter{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0}
+.nl-in{max-width:520px;margin:0 auto;padding:0 24px;text-align:center}
+.nl-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(122,158,126,.1);border:1px solid rgba(122,158,126,.2);padding:4px 12px;border-radius:100px;font-size:11px;font-weight:700;color:var(--sage);margin-bottom:16px}
+.nl-title{font-family:var(--serif);font-size:clamp(26px,3.5vw,36px);font-weight:600;letter-spacing:-.02em;color:var(--navy);margin-bottom:10px}
+.nl-sub{font-size:14px;color:var(--muted);margin-bottom:28px}
+.nl-form{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.nl-input{flex:1;min-width:220px;background:var(--bg);border:1.5px solid var(--border);border-radius:24px;color:var(--text);font-size:14px;font-family:var(--sans);padding:12px 20px;outline:none;transition:border-color .15s}
+.nl-input:focus{border-color:var(--sage)}
+.nl-input::placeholder{color:var(--muted)}
+.nl-btn{background:var(--navy);color:#fff;font-size:14px;font-weight:700;padding:12px 24px;border-radius:24px;border:none;cursor:pointer;font-family:var(--sans);transition:background .15s}
+.nl-btn:hover{background:var(--navy2)}
+
+/* FOOTER */
+footer{background:var(--navy);padding:48px 0 24px}
+.footer-in{max-width:1160px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:32px}
+.footer-logo{font-family:var(--serif);font-size:20px;font-weight:600;color:#fff;margin-bottom:8px}
+.footer-logo span{color:var(--sage)}
+.footer-desc{font-size:13px;color:rgba(255,255,255,.4);line-height:1.7}
+.footer-head{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:14px}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:13px;color:rgba(255,255,255,.5);transition:color .15s}
+.footer-links a:hover{color:var(--sage)}
+.footer-bottom{max-width:1160px;margin:0 auto;padding:24px 24px 0;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between}
+.footer-copy{font-size:12px;color:rgba(255,255,255,.25)}
+
 @media(max-width:900px){
   .hero-in{grid-template-columns:1fr}
   .hero-image{display:none}
@@ -891,9 +1059,9 @@ footer{background:var(--navy);padding:48px 0 24px}
 .art{max-width:760px;margin:48px auto;padding:0 24px 80px}
 .hdr{background:#f7f8fa;border-bottom:1px solid #e2e5ea;padding:18px 0}
 .hi{max-width:760px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center}
-h1{font-family:'Inter',sans-serif;font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.2;margin-bottom:16px;color:#111111}
+h1{font-family:'Inter',sans-serif;font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.2;margin-bottom:16px;color:#1a2332}
 p{margin-bottom:18px;color:#444;line-height:1.75}
-.intro{font-size:18px;line-height:1.7;color:#111111}
+.intro{font-size:18px;line-height:1.7;color:#1a2332}
 .concl{background:#f7f8fa;border-left:4px solid #1e3a5f;padding:20px 24px;border-radius:0 8px 8px 0;margin-top:40px}
 .meta{font-size:13px;color:#999;margin-bottom:24px}
 </style>
@@ -921,16 +1089,16 @@ p{margin-bottom:18px;color:#444;line-height:1.75}
   <p class="intro"><p>Most new mothers who struggle with breastfeeding aren't failing at it. They're dealing with a latch problem that nobody showed them how to fix. I've sat with hundreds of families in the NICU and on the postpartum floor, and the pattern is almost always the same: a baby who keeps slipping off the breast, a mother whose nipples are cracked and raw by day three, and a well-meaning nurse who said "just keep trying" and moved on. That advice isn't enough. A poor latch doesn't usually fix itself with persistence alone, and the longer it goes unaddressed, the more a mother's milk supply, confidence, and willingness to continue breastfeeding all take a hit.</p></p>
   <p><p>My position on this is pretty clear: latch problems are mechanical, not moral. They're fixable in the vast majority of cases, but only if you understand what's actually going wrong. A 2017 systematic review published in the journal <em>Maternal and Child Nutrition</em> found that early, skilled lactation support reduced breastfeeding cessation in the first two weeks by around 30 percent. That's not a small number. And yet the fixes most articles describe are vague, generic, or honestly just wrong. So here's what I actually tell families, backed by evidence and shaped by three kids of my own, two of whom gave me a genuinely humbling introduction to latch trouble.</p></p>
   
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">What a Good Latch Looks Like Versus What People Think It Looks Like</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#1a2332">What a Good Latch Looks Like Versus What People Think It Looks Like</h2>
 <div><p>There's a widespread misconception that a latch is correct if it doesn't hurt. That's not a reliable rule. In the first few days, many mothers experience significant nipple sensitivity even with a technically good latch, simply because the tissue isn't conditioned yet. Pain that fades after the first 30 seconds or so is often normal early on. Pain that stays sharp, causes a pinching or biting sensation throughout the feed, or leaves your nipple looking flattened, creased, or lipstick-shaped afterward? That's a latch problem worth fixing immediately.</p><p>A correct latch means the baby has taken in a good portion of the areola, not just the nipple. The chin should be pressed firmly into the breast, the nose barely touching or just slightly clear. The baby's lips should be flanged outward, like a fish mouth, not tucked in. And crucially, you should hear rhythmic swallowing, not clicking. Clicking almost always means the baby is losing suction repeatedly, which both reduces milk transfer and causes nipple trauma.</p><p>I've seen this pattern so many times: a mother is told the latch "looks fine" by someone who glanced at it for five seconds. But nobody watched a full feeding. A latch can start correctly and deteriorate as the baby fatigues or as the breast softens. If you're questioning it, watch the whole feed, not just the first minute.</p></div>
 
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">The Positioning Adjustments That Make the Biggest Difference</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#1a2332">The Positioning Adjustments That Make the Biggest Difference</h2>
 <div><p>Position and latch are inseparable. You can't fix one without the other. The most common error I see is a mother bringing her breast to the baby instead of bringing the baby to the breast. It sounds like a small distinction, but it changes everything. When a mother hunches forward or tilts the breast down to meet a baby who's lying flat, the baby's head is usually tipped chin-up, which makes a deep latch nearly impossible. The throat is partially closed in that position. Think about trying to swallow with your head tipped back.</p><p>The fix is to support the baby belly-to-belly with you, their head tilted very slightly back so the chin leads into the breast first. The chin should make contact before the nose does. This tilted head position opens the baby's airway and allows the mouth to open wider. I always tell parents to wait for that wide, gape-like open mouth before bringing the baby on, because latching onto a partially open mouth almost guarantees a shallow latch.</p><p>Football hold is underrated, especially for mothers who've had a cesarean, have larger breasts, or have a baby with a small mouth. It gives you much better visibility and control over the baby's head. With my second child, football hold was the only position that worked for the first three weeks. I was embarrassed to admit that as a nurse, but flat-out, it saved our breastfeeding relationship.</p></div>
 
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">When the Problem Is the Baby's Anatomy, Not Your Technique</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#1a2332">When the Problem Is the Baby's Anatomy, Not Your Technique</h2>
 <div><p>Tongue tie gets talked about a lot right now, and honestly the conversation has become somewhat polarized. There are providers who diagnose and release every tight frenulum they see, and there are others who dismiss tongue tie concerns almost entirely. The truth sits somewhere in the middle. A posterior tongue tie, the kind that's harder to spot because it's submucosal, can absolutely cause latch dysfunction without being immediately obvious on a quick oral exam. Symptoms include clicking, poor weight gain, a baby who seems to be working very hard to feed but isn't transferring milk efficiently, and a mother with persistent nipple pain despite good positioning.</p><p>But not every baby who struggles with latching has a tongue tie. Jaw tension from a long or difficult labor, including vacuum or forceps delivery, can cause similar problems. A baby who's reluctant to open wide, who keeps turning their head to one side, or who seems uncomfortable extending their neck may benefit from evaluation by a pediatric chiropractor or a craniosacral therapist. I've seen this help in practice, though I'll be honest that the evidence base here is thinner than I'd like. It's an area of genuine debate in the lactation community.</p><p>If you suspect a structural issue, the right path is a thorough evaluation by an IBCLC, ideally one who works closely with a pediatric dentist or ENT. A frenotomy, when it's truly indicated, can produce almost immediate improvement. But it's not a guaranteed fix, and it works best when combined with lactation support before and after the procedure.</p></div>
 
-<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#111111">What to Do Right Now If Feeds Are Painful and Your Baby Isn't Gaining</h2>
+<h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#1a2332">What to Do Right Now If Feeds Are Painful and Your Baby Isn't Gaining</h2>
 <div><p>First, protect your supply. If feeding is painful enough that you're cutting sessions short, or if your baby isn't transferring milk well, pump after or instead of feeds to maintain stimulation. Your supply is largely established in the first two to three weeks, and gaps in removal during that window are harder to recover from later. Pumping isn't giving up on breastfeeding. It's buying yourself time to fix the latch without starving the supply.</p><p>Second, get a weighted feed done by your pediatrician or lactation consultant. A weighted feed measures how much milk the baby actually transferred during a nursing session by weighing them before and after on a precise scale. It takes the guesswork out. You'll know whether the issue is the latch itself, the baby's suck strength, or your letdown. That information changes the plan. It's also worth reading up on <a href="/newborn-sleep-cycles-week-one/">what's actually normal in a newborn's sleep and feeding patterns during week one</a>, because sometimes parents interpret normal newborn sleepiness as a feeding problem, and vice versa.</p><p>Third, contact an IBCLC sooner than feels necessary. Most parents wait until things are truly desperate, which is understandable but unfortunate. An IBCLC is not a luxury resource for people who are struggling dramatically. They're the appropriate first response to any feeding concern, and many insurance plans in the United States are required to cover lactation services under the Affordable Care Act. You don't need to be at the end of your rope to ask for help.</p></div>
   <div class="concl"><p>The one thing you can do today, right now, is break the latch and try again if it doesn't feel right. Slide a clean finger into the corner of the baby's mouth to release the suction, reposition, wait for a wide open mouth, and try again. It takes longer in the short term. But a shallow latch won't improve on its own, and every feed on a painful, ineffective latch is a missed opportunity to get it right. You're not being precious by stopping and starting over. You're being a good mother who's paying attention.</p></div>
 </div><div id="comments-section" style="max-width:760px;margin:64px auto 0;padding:0 24px 48px">
