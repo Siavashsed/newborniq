@@ -1,0 +1,52 @@
+[
+  {
+    "id": "c1343",
+    "name": "Sarah M.",
+    "initials": "SM",
+    "color": "#f59e0b",
+    "date_iso": "2026-05-19",
+    "date_display": "May 19, 2026",
+    "text": "This is so helpful! I always wondered if there was an actual difference between my son's cries or if I was just imagining things. The frequency breakdown finally makes sense of what I've been hearing for the past 3 months.",
+    "likes": 8
+  },
+  {
+    "id": "c2801",
+    "name": "James T.",
+    "initials": "JT",
+    "color": "#10b981",
+    "date_iso": "2026-05-22",
+    "date_display": "May 22, 2026",
+    "text": "Honestly, my daughter's cry sounds like ALL of these at once. Maybe I need to get my hearing checked lol.",
+    "likes": 11
+  },
+  {
+    "id": "c3317",
+    "name": "Rebecca K.",
+    "initials": "RK",
+    "color": "#ef4444",
+    "date_iso": "2026-05-25",
+    "date_display": "May 25, 2026",
+    "text": "The hunger cry section was a game changer for me. I was overfeeding because I couldn't tell the difference between hungry and tired. Thanks for breaking this down so clearly!",
+    "likes": 9
+  },
+  {
+    "id": "c4801",
+    "name": "David L.",
+    "initials": "DL",
+    "color": "#38bdf8",
+    "date_iso": "2026-05-28",
+    "date_display": "May 28, 2026",
+    "text": "Has anyone else found that their baby's cry doesn't fit into these categories? My newborn seems to have his own unique pattern that doesn't match what's described here.",
+    "likes": 5
+  },
+  {
+    "id": "c5299",
+    "name": "Monica P.",
+    "initials": "MP",
+    "color": "#38bdf8",
+    "date_iso": "2026-06-02",
+    "date_display": "Jun 2, 2026",
+    "text": "I wish I had read this during my first week home from the hospital. Would've saved me so much stress and second-guessing myself.",
+    "likes": 12
+  }
+]
