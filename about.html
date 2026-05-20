@@ -165,23 +165,45 @@ footer{background:var(--navy);padding:48px 0 24px}
 .tool-pill-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .tool-pill{background:rgba(122,158,126,.12);color:var(--sage);font-size:11px;font-weight:700;padding:4px 10px;border-radius:100px}
 .tool-disclaimer{max-width:760px;margin:32px auto 0;text-align:center;font-size:12px;color:var(--muted);line-height:1.7;padding:16px 20px;background:var(--warm);border-radius:12px}
-.tool-disclaimer strong{color:var(--navy);font-weight:700}
-@media(max-width:900px){.tools-grid{grid-template-columns:1fr}}
-
-@media(max-width:900px){
+.tool-disclaimer strong{color:var(--navy);font-weight:700}@media(max-width:900px){.tools-grid{grid-template-columns:1fr}}@media(max-width:900px){
   .hero-in{grid-template-columns:1fr}
   .hero-image{display:none}
   .card-grid{grid-template-columns:1fr 1fr}
   .milestones-in{grid-template-columns:1fr}
   .reassurance-in{grid-template-columns:1fr 1fr}
   .footer-in{grid-template-columns:1fr 1fr}
-}
-@media(max-width:600px){
+}@media(max-width:600px){
   .nav-links{display:none}
   .card-grid{grid-template-columns:1fr}
   .footer-in{grid-template-columns:1fr}
   .reassurance-in{grid-template-columns:1fr}
 }
+
+/* CONTRAST-AUDIT v1 */
+/* Article-page-only contrast guard. body[data-page-depth="1"] is stamped on
+   every article by layout_shell.wrap_page. Homepage (depth=0) is untouched. */
+body[data-page-depth="1"] h1,
+body[data-page-depth="1"] h2,
+body[data-page-depth="1"] h3,
+body[data-page-depth="1"] .art-title,
+body[data-page-depth="1"] .article-title,
+body[data-page-depth="1"] .mag-hero h1,
+body[data-page-depth="1"] .imm-hero h1,
+body[data-page-depth="1"] article h1,
+body[data-page-depth="1"] article h2,
+body[data-page-depth="1"] article h3{color:#000000 !important}
+body[data-page-depth="1"] article p,
+body[data-page-depth="1"] article li,
+body[data-page-depth="1"] .art-body p,
+body[data-page-depth="1"] .mag-body p,
+body[data-page-depth="1"] .imm-body p,
+body[data-page-depth="1"] article .intro,
+body[data-page-depth="1"] article .concl,
+body[data-page-depth="1"] article strong{color:#1a1a1a !important}
+body[data-page-depth="1"] article a,
+body[data-page-depth="1"] article p a,
+body[data-page-depth="1"] article .intro a{color:#1e3a5f !important;text-decoration:underline;text-underline-offset:3px}
+/* /CONTRAST-AUDIT */
 </style>
 </head>
 <body data-page-depth="0">
@@ -256,10 +278,7 @@ footer{background:var(--navy);padding:48px 0 24px}
 .ab-cta h2{font-size:clamp(24px,3.4vw,34px);margin-bottom:10px}
 .ab-cta p{font-size:14px;color:var(--ab-muted);max-width:420px;margin:0 auto 24px}
 .ab-btn{display:inline-block;background:var(--ab-navy);color:#fff;font-size:14px;font-weight:700;padding:13px 28px;border-radius:24px;transition:background .15s}
-.ab-btn:hover{background:var(--ab-navy2)}
-
-@media(max-width:760px){.ab-vgrid,.ab-mgrid{grid-template-columns:1fr}.ab-tgrid{grid-template-columns:1fr}}
-</style>
+.ab-btn:hover{background:var(--ab-navy2)}@media(max-width:760px){.ab-vgrid,.ab-mgrid{grid-template-columns:1fr}.ab-tgrid{grid-template-columns:1fr}}</style>
 
 <main class="ab-main">
   <section class="ab-hero">
