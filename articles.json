@@ -10,7 +10,8 @@
     "outbound_links": [
       "aap.org",
       "sleepfoundation.org"
-    ]
+    ],
+    "category": "Newborn Basics"
   },
   {
     "title": "How to Swaddle Correctly, and When You Need to Stop",
@@ -23,7 +24,8 @@
     "outbound_links": [
       "hipdysplasia.org",
       "healthychildren.org"
-    ]
+    ],
+    "category": "Newborn Basics"
   },
   {
     "title": "Breastfeeding Latch Issues: The Fixes That Actually Work",
@@ -35,7 +37,8 @@
     "image": "https://images.pexels.com/photos/32830535/pexels-photo-32830535.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "outbound_links": [
       "maternalandchildnutrition.com"
-    ]
+    ],
+    "category": "Feeding"
   },
   {
     "title": "What a Newborn's Cry Actually Means: A Frequency Guide for Exhausted Parents",
@@ -47,6 +50,7 @@
     "image": "https://images.pexels.com/photos/9300611/pexels-photo-9300611.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "outbound_links": [
       "earlyhuman development.com"
-    ]
+    ],
+    "category": "Newborn Basics"
   }
 ]
