@@ -367,6 +367,7 @@ function renderMore(){
 }
 
 async function load(){
+  if(!document.getElementById('cardGrid'))return;
   try{
     const r=await fetch("./articles.json");
     const data=r.ok?await r.json():[];
