@@ -178,6 +178,47 @@ footer{background:var(--navy);padding:48px 0 24px}
   .footer-in{grid-template-columns:1fr}
   .reassurance-in{grid-template-columns:1fr}
 }
+
+/* CONTRAST-AUDIT v1 */
+/* Article-page-only contrast guard. body[data-page-depth="1"] is stamped on
+   every article by layout_shell.wrap_page. Homepage (depth=0) is untouched. */
+body[data-page-depth="1"] h1,
+body[data-page-depth="1"] h2,
+body[data-page-depth="1"] h3,
+body[data-page-depth="1"] .art-title,
+body[data-page-depth="1"] .article-title,
+body[data-page-depth="1"] .mag-hero h1,
+body[data-page-depth="1"] .imm-hero h1,
+body[data-page-depth="1"] article h1,
+body[data-page-depth="1"] article h2,
+body[data-page-depth="1"] article h3{color:#000000 !important}
+body[data-page-depth="1"] article p,
+body[data-page-depth="1"] article li,
+body[data-page-depth="1"] .art-body p,
+body[data-page-depth="1"] .mag-body p,
+body[data-page-depth="1"] .imm-body p,
+body[data-page-depth="1"] article .intro,
+body[data-page-depth="1"] article .concl,
+body[data-page-depth="1"] article strong{color:#1a1a1a !important}
+body[data-page-depth="1"] article a,
+body[data-page-depth="1"] article p a,
+body[data-page-depth="1"] article .intro a{color:#1e3a5f !important;text-decoration:underline;text-underline-offset:3px}
+/* /CONTRAST-AUDIT */
+/* page */
+:root{
+  --bg:#fafbf8;
+  --bg2:#fff;
+  --cream:#f5f0e8;
+  --navy:#1e3a5f;
+  --navy2:#162d4a;
+  --sage:#7a9e7e;
+  --warm:#f0ebe0;
+  --text:#1a2332;
+  --muted:#7a8697;
+  --border:#e4e9ef;
+  --serif:'Lora',serif;
+  --sans:'Nunito',sans-serif;
+}
 /* page */
 :root{
   --bg:#fafbf8;
@@ -221,7 +262,7 @@ p{margin-bottom:18px;color:#444;line-height:1.75}
   </div>
 </nav>
 <article itemscope itemtype="https://schema.org/Article"><div class="art">
-  <div class="meta"><a href="../" style="color:#999">← Home</a> &nbsp;·&nbsp; <time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15">May 15, 2026</time></time></time></time></time> &nbsp;·&nbsp; Newborn Care & Parenting</div>
+  <div class="meta"><a href="../" style="color:#999">← Home</a> &nbsp;·&nbsp; <time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15">May 15, 2026</time></time></time></time></time></time> &nbsp;·&nbsp; Newborn Care & Parenting</div>
   <h1>Newborn Sleep Cycles in Week One: What's Actually Normal (And What Isn't)</h1>
   <div style="font-size:13px;color:#999;margin-bottom:24px">By <strong style="color:#444">Melissa Torres</strong></div>
   <img src="https://images.pexels.com/photos/28529081/pexels-photo-28529081.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Newborn baby sleeping peacefully swaddled in a soft white blanket in a hospital bassinet" loading="lazy" style="width:100%;height:400px;object-fit:cover;border-radius:8px;margin:28px 0"><p style="font-size:11px;color:#999;margin:-16px 0 20px">Photo by Prabhash Kumar / Pexels</p>
@@ -364,7 +405,7 @@ p{margin-bottom:18px;color:#444;line-height:1.75}
     }).catch(function(){allComments=[];rerender();});
   }
 })();
-</script></article></article></article></article></article>
+</script></article></article></article></article></article></article>
 <footer>
   <div class="footer-in">
     <div>
