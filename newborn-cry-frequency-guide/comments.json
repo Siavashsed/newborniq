@@ -7,7 +7,7 @@
     "date_iso": "2026-05-20",
     "date_display": "May 20, 2026",
     "text": "This is so helpful! I've been driving myself crazy trying to figure out if my baby's cry means hunger or just tiredness. The frequency breakdown actually makes sense now.",
-    "likes": 8
+    "likes": 0
   },
   {
     "id": "c2654",
@@ -17,36 +17,6 @@
     "date_iso": "2026-05-23",
     "date_display": "May 23, 2026",
     "text": "Honestly felt like I was losing my mind those first few weeks. Wish I had this guide when my daughter was born, but sharing it with my brother now.",
-    "likes": 11
-  },
-  {
-    "id": "c3540",
-    "name": "Patricia L.",
-    "initials": "PL",
-    "color": "#a78bfa",
-    "date_iso": "2026-05-25",
-    "date_display": "May 25, 2026",
-    "text": "Does this work for all babies though? My son's cry always sounded different from what people described, and he turned out to have reflux. Just saying experience matters too.",
-    "likes": 6
-  },
-  {
-    "id": "c4434",
-    "name": "Marcus D.",
-    "initials": "MD",
-    "color": "#3ecf8e",
-    "date_iso": "2026-05-28",
-    "date_display": "May 28, 2026",
-    "text": "The hungry cry vs. tired cry section was a game-changer for us. Our little guy is 3 months old and we've finally stopped second-guessing everything.",
-    "likes": 9
-  },
-  {
-    "id": "c5384",
-    "name": "Emma T.",
-    "initials": "ET",
-    "color": "#f59e0b",
-    "date_iso": "2026-06-02",
-    "date_display": "Jun 2, 2026",
-    "text": "Real talk: no guide worked for my twins because they seemed to have their own unique cry signals. But I appreciate the scientific approach here even if YMMV.",
-    "likes": 7
+    "likes": 2
   }
 ]
