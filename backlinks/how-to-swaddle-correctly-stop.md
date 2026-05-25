@@ -1,4 +1,4 @@
-# Backlink content — How to Swaddle Correctly, and When You Need to Stop
+# Backlink content - How to Swaddle Correctly, and When You Need to Stop
 **URL:** https://siavashsed.github.io/newborniq/how-to-swaddle-correctly-stop/
 **Generated:** 2026-05-15
 
@@ -23,7 +23,7 @@ I put together a breakdown of the right technique and the signs your baby is rea
 
 In my twelve years as a NICU nurse, I've seen talented, loving parents accidentally compromise their baby's hip development because they thought tighter swaddling meant better sleep.
 
-The margin between an effective swaddle and a harmful one is small—just a couple of finger widths of room at the hips. It's not intuitive for new parents, which is why so many get it wrong.
+The margin between an effective swaddle and a harmful one is small-just a couple of finger widths of room at the hips. It's not intuitive for new parents, which is why so many get it wrong.
 
 But here's what surprised me most: parents struggle equally with knowing when to stop. Too early, and babies lose a crucial soothing tool. Too late, and you're disrupting their developmental milestones.
 
