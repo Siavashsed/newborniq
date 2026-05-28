@@ -52,5 +52,64 @@
       "earlyhuman development.com"
     ],
     "category": "Newborn Basics"
+  },
+  {
+    "title": "The Safe Sleep Rule Change That Shook Pediatric Care in 2024",
+    "slug": "aap-safe-sleep-update-2024",
+    "meta_description": "The AAP updated its safe sleep guidance in 2024. Here's what actually changed, why it matters, and what NICU nurses are telling parents right now.",
+    "date": "August 10, 2024",
+    "date_iso": "2024-08-10",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/32979887/pexels-photo-32979887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "publications.aap.org",
+      "cpsc.gov",
+      "nichd.nih.gov"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The Safe Sleep Rule Change That Quietly Rewrote NICU Discharge Conversations in 2024",
+    "slug": "aap-safe-sleep-update-2024-2",
+    "meta_description": "In 2024, the AAP updated its safe sleep guidance in ways that changed how NICUs counsel families. Here's what it means for your newborn.",
+    "date": "February 28, 2024",
+    "date_iso": "2024-02-28",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/12342692/pexels-photo-12342692.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cdc.gov",
+      "publications.aap.org",
+      "nichd.nih.gov",
+      "healthychildren.org"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The FDA's 2021 Infant Sleep Product Warning Was a Long Time Coming",
+    "slug": "fda-2021-infant-sleep-product-warning",
+    "meta_description": "In 2021, the FDA finally acted on dangerous infant sleep products. Here's what happened, why it mattered, and what parents need to know.",
+    "date": "March 20, 2021",
+    "date_iso": "2021-03-20",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/36845896/pexels-photo-36845896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "cpsc.gov",
+      "cdc.gov",
+      "publications.aap.org"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
