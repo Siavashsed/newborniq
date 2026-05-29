@@ -111,5 +111,46 @@
       "en"
     ],
     "category": "Feeding"
+  },
+  {
+    "title": "The Week's Top 7 Newborn Products Worth Knowing About Right Now (May 2026)",
+    "slug": "top-7-newborn-products-may-2026",
+    "meta_description": "NICU nurse and mom of 3 ranks the 7 most notable newborn care products trending in May 2026 - what works, who it's for, and what to skip.",
+    "date": "May 29, 2026",
+    "date_iso": "2026-05-29",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/33316394/pexels-photo-33316394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "owletcare.com",
+      "elvie.com",
+      "hatch.co",
+      "ncbi.nlm.nih.gov",
+      "aap.org",
+      "nichd.nih.gov"
+    ],
+    "posted_iso": "2026-05-29",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The AAP's 2019 Safe Sleep Reaffirmation: What It Actually Changed for NICU Families",
+    "slug": "aap-safe-sleep-guidelines-2019",
+    "meta_description": "The AAP reaffirmed its safe sleep guidelines in 2019. Here's what NICU nurse and mom Melissa Torres says it meant for real families.",
+    "date": "May 24, 2019",
+    "date_iso": "2019-05-24",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/32979879/pexels-photo-32979879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cdc.gov",
+      "consumerreports.org",
+      "publications.aap.org"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
