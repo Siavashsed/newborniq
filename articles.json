@@ -69,7 +69,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Feeding"
   },
   {
     "title": "The Safe Sleep Rule Change That Quietly Rewrote NICU Discharge Conversations in 2024",
@@ -88,7 +89,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Feeding"
   },
   {
     "title": "The FDA's 2021 Infant Sleep Product Warning Was a Long Time Coming",
@@ -107,6 +109,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Feeding"
   }
 ]
