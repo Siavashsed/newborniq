@@ -153,5 +153,44 @@
       "en"
     ],
     "category": "Parenting Support"
+  },
+  {
+    "title": "Building a Daily Routine With a Newborn That Isn't Miserable",
+    "slug": "newborn-daily-routine-that-works",
+    "meta_description": "NICU nurse and mom of three shares how to build a newborn daily routine that actually works without making everyone miserable.",
+    "date": "May 31, 2026",
+    "date_iso": "2026-05-31",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/27176789/pexels-photo-27176789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "publications.aap.org",
+      "www.nichd.nih.gov",
+      "www.aap.org",
+      "www.cdc.gov"
+    ],
+    "posted_iso": "2026-05-31",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The AAP's 2023 Safe Sleep Guidelines Update: What Actually Changed and Why It Matters",
+    "slug": "aap-2023-safe-sleep-guidelines-update",
+    "meta_description": "The AAP updated safe sleep guidance in 2023. NICU nurse and mom of three Melissa Torres breaks down what changed, what didn't, and what parents should do now.",
+    "date": "August 21, 2023",
+    "date_iso": "2023-08-21",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/31036228/pexels-photo-31036228.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "aap.org",
+      "cdc.gov",
+      "cpsc.gov",
+      "publications.aap.org"
+    ],
+    "posted_iso": "2026-05-31",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
