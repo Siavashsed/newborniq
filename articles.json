@@ -171,7 +171,8 @@
     "posted_iso": "2026-05-31",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Feeding"
   },
   {
     "title": "The AAP's 2023 Safe Sleep Guidelines Update: What Actually Changed and Why It Matters",
@@ -191,6 +192,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Parenting Support"
   }
 ]
