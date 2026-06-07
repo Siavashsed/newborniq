@@ -194,5 +194,45 @@
       "en"
     ],
     "category": "Parenting Support"
+  },
+  {
+    "title": "The Week's Top 7 Newborn Products Worth Knowing About Right Now (June 2026)",
+    "slug": "top-7-newborn-products-june-2026",
+    "meta_description": "NICU nurse and mom of 3 ranks the 7 most notable newborn products trending in June 2026 - what works, who it's for, and what to skip.",
+    "date": "June 07, 2026",
+    "date_iso": "2026-06-07",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/3845268/pexels-photo-3845268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cdc.gov",
+      "aap.org",
+      "ncbi.nlm.nih.gov",
+      "elvie.com",
+      "cradlewise.com"
+    ],
+    "posted_iso": "2026-06-07",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The FDA's 2024 Crackdown on Infant Sleep Products Finally Said What NICU Nurses Have Known for Years",
+    "slug": "fda-2024-infant-sleep-product-ban",
+    "meta_description": "The FDA's 2024 infant sleep product regulations changed what's on store shelves. A NICU nurse breaks down what it means for your baby's safety.",
+    "date": "August 13, 2024",
+    "date_iso": "2024-08-13",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/4964216/pexels-photo-4964216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "cpsc.gov",
+      "publications.aap.org"
+    ],
+    "posted_iso": "2026-06-07",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
