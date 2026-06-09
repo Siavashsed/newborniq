@@ -234,5 +234,25 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The Infant Inclined Sleeper Ban Finally Had Teeth in 2023",
+    "slug": "infant-inclined-sleeper-ban-2023",
+    "meta_description": "The CPSC's 2023 inclined infant sleeper enforcement changed newborn safety forever. A NICU nurse breaks down what it meant and why it took so long.",
+    "date": "December 07, 2023",
+    "date_iso": "2023-12-07",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/17834926/pexels-photo-17834926.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cpsc.gov",
+      "aap.org",
+      "happiest-baby.com",
+      "jpma.org"
+    ],
+    "posted_iso": "2026-06-09",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
