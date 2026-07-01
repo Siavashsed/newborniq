@@ -254,5 +254,47 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "7 Newborn Products Actually Worth Buying This July 2026",
+    "slug": "top-7-newborn-products-july-2026",
+    "meta_description": "NICU nurse and mom of 3 ranks July 2026's top newborn products by real-world value. No hype, just what works.",
+    "date": "July 01, 2026",
+    "date_iso": "2026-07-01",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/3341186/pexels-photo-3341186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "grandviewresearch.com",
+      "ncbi.nlm.nih.gov",
+      "cdc.gov",
+      "hatchbaby.com",
+      "happiest baby.com",
+      "elvie.com",
+      "nanit.com"
+    ],
+    "posted_iso": "2026-07-01",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The AAP's 2021 Formula Labeling Push Changed What Parents Could Actually Trust",
+    "slug": "aap-2021-infant-formula-labeling",
+    "meta_description": "The AAP's 2021 call to overhaul infant formula labeling mattered more than most parents realized. Here's what it meant and still means.",
+    "date": "August 18, 2021",
+    "date_iso": "2021-08-18",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/7488437/pexels-photo-7488437.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "publications.aap.org",
+      "ncbi.nlm.nih.gov",
+      "cdc.gov"
+    ],
+    "posted_iso": "2026-07-01",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
