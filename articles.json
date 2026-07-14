@@ -296,5 +296,42 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The 7 Newborn Products Actually Worth Talking About This Week",
+    "slug": "top-7-newborn-products-july-13-2026",
+    "meta_description": "A NICU nurse ranks the 7 most notable newborn products and innovations trending right now, what makes each stand out, and who each one fits.",
+    "date": "July 13, 2026",
+    "date_iso": "2026-07-13",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/6134676/pexels-photo-6134676.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "aap.org",
+      "nichd.nih.gov"
+    ],
+    "posted_iso": "2026-07-13",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The Day Federal Regulators Finally Banned the Inclined Sleeper",
+    "slug": "cpsc-2021-infant-sleep-rule",
+    "meta_description": "In June 2021 the CPSC voted to require every infant sleep product to meet flat, firm safe sleep standards. Here is what that ruling actually changes.",
+    "date": "September 22, 2021",
+    "date_iso": "2021-09-22",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/12426618/pexels-photo-12426618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cpsc.gov",
+      "cdc.gov",
+      "consumerreports.org"
+    ],
+    "posted_iso": "2026-07-13",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
