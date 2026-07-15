@@ -333,5 +333,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "You Can Take a Newborn Outside on Day Four. Here's What Actually Puts Them at Risk",
+    "slug": "taking-newborn-outside-real-risks",
+    "meta_description": "A NICU nurse on taking your newborn outside: sun, cold, crowds, and germ exposure, and which worries are real versus which ones you can drop.",
+    "date": "July 15, 2026",
+    "date_iso": "2026-07-15",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/6393292/pexels-photo-6393292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "healthychildren.org",
+      "cdc.gov",
+      "nhtsa.gov"
+    ],
+    "posted_iso": "2026-07-15",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
