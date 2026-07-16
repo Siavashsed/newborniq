@@ -351,5 +351,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Newborn's Bottle Nipple Is Probably Too Fast",
+    "slug": "paced-bottle-feeding-flow-rate",
+    "meta_description": "Paced bottle feeding, explained step by step, plus why 'slow flow' labels are unreliable and how to pick a nipple flow rate your newborn can handle.",
+    "date": "July 16, 2026",
+    "date_iso": "2026-07-16",
+    "author": "NewbornIQ Editorial Team",
+    "image": "https://images.pexels.com/photos/27176763/pexels-photo-27176763.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cdc.gov",
+      "pubmed.ncbi.nlm.nih.gov",
+      "healthychildren.org"
+    ],
+    "posted_iso": "2026-07-16",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
