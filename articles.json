@@ -369,5 +369,25 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The Newborn Witching Hour Is Normal, and You Can't Fix It",
+    "slug": "newborn-witching-hour-what-helps",
+    "meta_description": "Why newborns melt down every evening, what the crying curve research shows, and what actually lowers the volume, from a NICU nurse and mom of three.",
+    "date": "July 17, 2026",
+    "date_iso": "2026-07-17",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/37473300/pexels-photo-37473300.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "healthychildren.org",
+      "purplecrying.info",
+      "journals.plos.org",
+      "safetosleep.nichd.nih.gov",
+      "publications.aap.org"
+    ],
+    "posted_iso": "2026-07-17",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
