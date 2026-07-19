@@ -389,5 +389,25 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "A NICU Nurse Ranks July's Seven Most-Hyped Baby Products",
+    "slug": "nicu-nurse-ranks-july-newborn-products",
+    "meta_description": "A NICU nurse and mom of three ranks this week's 7 trending newborn products for July 2026, what each does well, and who should skip them.",
+    "date": "July 19, 2026",
+    "date_iso": "2026-07-19",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/15961872/pexels-photo-15961872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "cdc.gov",
+      "nature.com",
+      "publications.aap.org"
+    ],
+    "posted_iso": "2026-07-19",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
