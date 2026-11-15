@@ -416,5 +416,43 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Seven Newborn Products Worth Your Money This November, Ranked by a NICU Nurse",
+    "slug": "top-7-newborn-products-november-2026",
+    "meta_description": "A NICU nurse ranks the top 7 newborn products parents are buying in November 2026, with who each one suits and which smart gear to skip.",
+    "date": "November 15, 2026",
+    "date_iso": "2026-11-15",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/37473570/pexels-photo-37473570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "publications.aap.org",
+      "cdc.gov"
+    ],
+    "posted_iso": "2026-11-15",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The AAP Finally Let COVID-Positive Mothers Keep Their Newborns",
+    "slug": "aap-covid-rooming-in-reversal-2020",
+    "meta_description": "In July 2020 the AAP reversed course on separating newborns from mothers with COVID-19. A NICU nurse explains why rooming-in was the right call.",
+    "date": "October 01, 2020",
+    "date_iso": "2020-10-01",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/7282247/pexels-photo-7282247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "thelancet.com",
+      "who.int",
+      "cdc.gov"
+    ],
+    "posted_iso": "2026-11-15",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
