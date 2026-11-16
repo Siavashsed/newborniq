@@ -454,5 +454,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Most Latch Problems Are Positioning Problems, Not Your Baby's Tongue",
+    "slug": "latch-fixes-positioning-not-tongue",
+    "meta_description": "Breastfeeding latch issues usually come down to body position, not anatomy. A NICU nurse and mom of three explains the fixes that actually work.",
+    "date": "November 16, 2026",
+    "date_iso": "2026-11-16",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/6134681/pexels-photo-6134681.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "publications.aap.org",
+      "pubmed.ncbi.nlm.nih.gov",
+      "cdc.gov"
+    ],
+    "posted_iso": "2026-11-16",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
