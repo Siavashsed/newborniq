@@ -472,5 +472,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "A NICU Nurse on What Your Newborn's Cry Actually Means",
+    "slug": "newborn-cry-pitch-nicu-nurse",
+    "meta_description": "A NICU nurse and mom of three explains what a newborn's cry means, from pitch and crying frequency to the sounds that warrant a call tonight.",
+    "date": "November 17, 2026",
+    "date_iso": "2026-11-17",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/28193051/pexels-photo-28193051.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "dontshake.org",
+      "healthychildren.org"
+    ],
+    "posted_iso": "2026-11-17",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
