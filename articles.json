@@ -490,5 +490,26 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "A NICU Nurse Translates the AAP's Safe Sleep Guidelines Into Plain English",
+    "slug": "aap-safe-sleep-guidelines-plain-english",
+    "meta_description": "A NICU nurse and mom of three explains the AAP safe sleep guidelines in plain English: what's required, what's marketing, and where doctors disagree.",
+    "date": "November 18, 2026",
+    "date_iso": "2026-11-18",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/37974997/pexels-photo-37974997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "publications.aap.org",
+      "cdc.gov",
+      "safetosleep.nichd.nih.gov",
+      "healthychildren.org",
+      "cpsc.gov",
+      "bfmed.org"
+    ],
+    "posted_iso": "2026-11-18",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
