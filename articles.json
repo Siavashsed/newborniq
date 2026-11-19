@@ -511,5 +511,25 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "A NICU Nurse Explains Why On-Demand Beats the Newborn Feeding Schedule",
+    "slug": "newborn-feeding-schedule-vs-on-demand",
+    "meta_description": "Newborn feeding schedule vs on-demand: a NICU nurse and mom of three explains what the evidence says, and which babies still need a clock.",
+    "date": "November 19, 2026",
+    "date_iso": "2026-11-19",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/6969086/pexels-photo-6969086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "publications.aap.org",
+      "cdc.gov",
+      "who.int",
+      "doi.org",
+      "healthychildren.org"
+    ],
+    "posted_iso": "2026-11-19",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
