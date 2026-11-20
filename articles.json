@@ -531,5 +531,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Newborn's Diapers Tell You More Than the Clock Does",
+    "slug": "newborn-getting-enough-milk-signs",
+    "meta_description": "Wet diapers, stool color, weight checks and feeding cues: what a NICU nurse and mother of three watches to know a newborn is getting enough milk.",
+    "date": "November 20, 2026",
+    "date_iso": "2026-11-20",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/34566659/pexels-photo-34566659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "healthychildren.org",
+      "publications.aap.org",
+      "fn.bmj.com",
+      "cdc.gov"
+    ],
+    "posted_iso": "2026-11-20",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
