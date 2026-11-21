@@ -550,5 +550,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Seven Baby Products Ranked, and the Gadget I'd Rank Last",
+    "slug": "top-7-newborn-products-november-2026-2",
+    "meta_description": "A NICU nurse ranks this week's top 7 newborn products, from smart bassinets to formula makers, and says who each one is actually for.",
+    "date": "November 21, 2026",
+    "date_iso": "2026-11-21",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/32979876/pexels-photo-32979876.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "publications.aap.org",
+      "cdc.gov"
+    ],
+    "posted_iso": "2026-11-21",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
