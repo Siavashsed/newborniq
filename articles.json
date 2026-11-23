@@ -604,5 +604,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The Pacifier Wait That Protects Breastfeeding Is Shorter Than You Think",
+    "slug": "introduce-pacifier-without-hurting-breastfeeding",
+    "meta_description": "Wait until feeding is going well, usually 3 to 4 weeks, then offer a pacifier. A nurse and mother of three explains the evidence and the practical steps.",
+    "date": "November 23, 2026",
+    "date_iso": "2026-11-23",
+    "author": "Cora Beauchamp",
+    "image": "https://images.pexels.com/photos/27177575/pexels-photo-27177575.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cochranelibrary.com",
+      "who.int",
+      "publications.aap.org"
+    ],
+    "posted_iso": "2026-11-23",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
