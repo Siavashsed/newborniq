@@ -639,5 +639,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "A 100.4 Fever in a Newborn Means Go In, Not Wait",
+    "slug": "newborn-fever-first-hour-nicu-nurse",
+    "meta_description": "A NICU nurse explains what to do in the first hour of a newborn fever: how to take the temp, what to skip, and what the ER visit looks like.",
+    "date": "November 25, 2026",
+    "date_iso": "2026-11-25",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/9845941/pexels-photo-9845941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "publications.aap.org",
+      "jamanetwork.com",
+      "healthychildren.org"
+    ],
+    "posted_iso": "2026-11-25",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
