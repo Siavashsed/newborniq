@@ -622,5 +622,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Newborn Jaundice Is Common, and Your Eyes Will Miss It Sometimes",
+    "slug": "newborn-jaundice-spot-worry-treatment",
+    "meta_description": "Newborn jaundice affects about 6 in 10 term babies. A NICU nurse explains how to spot it, the red flags that need a same-day call, and how phototherapy works.",
+    "date": "November 24, 2026",
+    "date_iso": "2026-11-24",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/38407222/pexels-photo-38407222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "doi.org",
+      "nhs.uk"
+    ],
+    "posted_iso": "2026-11-24",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
