@@ -657,5 +657,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Baby's Cord Stump Needs Less Care, Not More",
+    "slug": "umbilical-cord-stump-care-normal",
+    "meta_description": "Most umbilical cord stumps fall off in 5 to 15 days. A NICU nurse explains what's normal, the real warning signs, and why dry care wins.",
+    "date": "November 26, 2026",
+    "date_iso": "2026-11-26",
+    "author": "Melissa Torres",
+    "image": "https://images.pexels.com/photos/7009383/pexels-photo-7009383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "healthychildren.org",
+      "publications.aap.org",
+      "cochranelibrary.com",
+      "who.int"
+    ],
+    "posted_iso": "2026-11-26",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
